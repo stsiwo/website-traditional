@@ -1,0 +1,34 @@
+@import "../abstracts/global";
+@import "../abstracts/variables";
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 8px;
+
+  // for nav tag
+  position: relative;
+
+  &__logo-box {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__nav-icon {
+  }
+
+  &__close-icon {
+    text-align: right;
+  }
+
+  @media screen and (min-width: $size-laptop + "px") {
+    &__close-icon {
+      display: none;
+    }
+  }
+}

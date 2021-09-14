@@ -1,0 +1,83 @@
+@import "../abstracts/global";
+@import "../abstracts/variables";
+
+.nav-icon {
+  @media screen and (min-width: $size-laptop + "px") {
+    display: none;
+  }
+}
+
+.nav {
+  font-weight: bold;
+
+  &__sub-nav {
+    display: none;
+  }
+
+  &__item-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  @media screen and (max-width: $size-laptop - 1  + "px") {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-primary;
+
+    & > ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__item {
+      margin: 8px;
+      border-bottom: 1px solid #fff;
+    }
+
+    &__link {
+      color: #fff;
+    }
+
+    &__dropdown-icon {
+      color: #fff;
+    }
+  }
+
+  @media screen and (min-width: $size-laptop + "px") {
+    // ideally, want to use nav without ul...
+    // any better idea?
+    & > ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    &__item {
+      margin: 0 8px;
+    }
+
+    &__sub-nav {
+      box-shadow: grey 1px 1px 2px;
+      position: absolute;
+    }
+
+    &__sub-item {
+      padding: 16px 24px;
+      border-bottom: 1px solid $color-accent;
+    }
+
+    &__link {
+      color: #000;
+    }
+  }
+}
