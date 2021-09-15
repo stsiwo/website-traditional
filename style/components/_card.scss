@@ -1,0 +1,9 @@
+@import "../abstracts/variables";
+
+.card {
+  padding: 8px 0;
+  box-shadow: $box-shadow;
+  width: 300px;
+  text-align: center;
+  display: inline-block; // to disable margin collapse of 1st and last child
+}

@@ -28,7 +28,7 @@ h5 {
 
 body {
   font-size: $font-size-body;
-  padding: 0 8px;
+  padding: 0 $bodyPaddingWidth;
 }
 
 ul {

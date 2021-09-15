@@ -8,18 +8,13 @@
 
   margin: 0 8px;
 
+  z-index: $z-index-header;
+
   // for nav tag
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-
-  &__logo-box {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
 
   &__nav-icon {
   }

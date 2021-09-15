@@ -1,0 +1,31 @@
+@import "../abstracts/variables";
+
+.image-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $color-accent;
+  border-radius: 6px;
+  box-shadow: $box-shadow;
+  flex-wrap: wrap;
+
+  &__left-content {
+    flex: 1 0 45%;
+    min-width: 300px;
+    padding: 16px;
+
+    & img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: $box-shadow;
+      position: relative;
+      top: -49px;
+    }
+  }
+
+  &__right-content {
+    flex: 0 0 45%;
+    padding: 16px;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../abstracts/variables";
+
+.footer {
+  margin-top: 160px;
+  background-color: $color-primary;
+  padding: 80px 8px 8px 8px;
+  margin-left: -$bodyPaddingWidth;
+  margin-right: -$bodyPaddingWidth;
+
+  &__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    & > * {
+      flex: 0 0 300px;
+      text-align: center;
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+  }
+
+  &__link {
+    color: #fff;
+  }
+}

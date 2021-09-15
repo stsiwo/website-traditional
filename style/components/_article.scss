@@ -1,0 +1,36 @@
+@import "../abstracts/variables";
+
+.article {
+  padding: 8px;
+  box-shadow: $box-shadow;
+  width: 300px;
+  display: inline-block; // to disable margin collapse of 1st and last child
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__date {
+    @include helper-text;
+    font-size: $font-size-small;
+  }
+
+  &__desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__button {
+    // align right
+    float: right;
+  }
+}

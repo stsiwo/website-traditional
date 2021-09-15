@@ -1,0 +1,12 @@
+@import "../abstracts/variables";
+
+.card-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  & .card {
+    flex: 0 0 300px;
+  }
+}

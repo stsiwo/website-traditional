@@ -12,6 +12,7 @@ $font-size-h3: 2.2rem;
 $font-size-h4: 2rem;
 $font-size-h5: 1rem;
 $font-size-body: 1.6rem;
+$font-size-small: 1.2rem;
 
 $opacity-desc: 86%;
 $opacity-helper: 60%;
@@ -20,3 +21,8 @@ $font-family: "Helvetica", "Arial", sans-serif;
 
 $box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 $box-shadow-pushed: -2px -2px 4px rgba(0, 0, 0, 0.25);
+
+$z-index-bg: -1;
+$z-index-header: 1000;
+
+$bodyPaddingWidth: 8px;
