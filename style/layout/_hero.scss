@@ -1,0 +1,26 @@
+@import "../abstracts/variables";
+
+.hero {
+  text-align: center;
+
+  @media screen and (min-width: $size-laptop + "px") {
+    display: flex;
+
+    &__left-content {
+      flex: 0 0 50%;
+    }
+
+    &__right-content {
+      flex: 0 0 50%;
+    }
+  }
+
+  &__left-content {
+    // to bring this left-content center vertically.
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+}

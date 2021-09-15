@@ -1,0 +1,11 @@
+@mixin desc-text {
+  color: rgba(0, 0, 0, $opacity-desc);
+}
+
+@mixin helper-text {
+  color: rgba(0, 0, 0, $opacity-helper);
+}
+
+@mixin error-text {
+  color: $color-error;
+}

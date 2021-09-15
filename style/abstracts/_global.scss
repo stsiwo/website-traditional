@@ -28,6 +28,7 @@ h5 {
 
 body {
   font-size: $font-size-body;
+  padding: 0 8px;
 }
 
 ul {
@@ -41,17 +42,4 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-/** text color **/
-#desc-text {
-  color: rgba(0, 0, 0, $opacity-desc);
-}
-
-#helper-text {
-  color: rgba(0, 0, 0, $opacity-helper);
-}
-
-#error-text {
-  color: $color-error;
 }

@@ -1,0 +1,7 @@
+@import "../abstracts/variables";
+
+.card {
+  box-shadow: $box-shadow;
+  width: 300px;
+  text-align: center;
+}

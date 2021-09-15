@@ -1,0 +1,15 @@
+@import "../abstracts/variables";
+
+.button {
+  background-color: $color-accent;
+  border: none;
+  box-shadow: $box-shadow;
+  padding: 8px 32px;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.button:active {
+  box-shadow: $box-shadow-pushed;
+}

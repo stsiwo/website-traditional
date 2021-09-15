@@ -1,6 +1,11 @@
-@import "./abstracts/global";
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/global";
 
 @import "./components/nav";
+@import "./components/button";
+@import "./components/card";
 
 @import "./layout/header";
+@import "./layout/bg";
+@import "./layout/hero";
