@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.service-card {
+  padding-bottom: 8px;
+  box-shadow: $box-shadow;
+  width: 300px;
+  text-align: center;
+  display: inline-block; // to disable margin collapse of 1st and last child
+
+  position: relative;
+
+  &__icon {
+    position: relative;
+    transform: translate(0, -50%);
+    box-shadow: $box-shadow;
+    border-radius: 50%; // to apply box-shadow circle, otherwise, it is applied for rectangle of image tag
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__desc {
+    @include helper-text;
+  }
+}

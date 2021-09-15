@@ -13,12 +13,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- swiperjs -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
     <!-- header -->
     <header class="header">
-      <a class="logo-box header__logo-box" href="/">
+      <a href="/" class="logo-box header__logo-box">
         <img src="./assets/logo.svg" alt="stsDev Logo Image" />
         <h2 class="logo-box__title">stsDev</h2>
       </a>
@@ -31,7 +36,7 @@
         </div>
         <ul>
           <li id="services-nav-item" class="nav__item">
-            <a href="/services.html" class="link nav__link">Services</a>
+            <a href="" class="link nav__link">Services</a>
             <ul
               id="services-sub-nav-item"
               class="nav__sub-nav nav__sub-nav_hidden"
@@ -80,23 +85,6 @@
       </nav>
     </header>
 
-    <div class="bg"></div>
-
-    <div class="hero">
-      <div class="hero__left-content">
-        <h3 class="hero__top-slogan">Connecting people and technology</h3>
-        <h1 class="hero__center-slogan">Let’s open the world of IT to you</h1>
-        <p class="hero__bottom-slogan">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <button class="button hero__button">Explore</button>
-      </div>
-
-      <div class="hero__right-content"></div>
-    </div>
-
     <div class="home-section">
       <h2 class="home-section__title">Our Innovative Services</h2>
       <p class="home-section__desc">
@@ -106,161 +94,129 @@
       </p>
     </div>
 
-    <div class="card-box">
-      <div class="card">
-        <h3 class="card__title">Web Development</h3>
-        <div class="card__icon">
-          <img
-            src="./assets/web-dev-service-circle.svg"
-            alt="Web Development Service Image"
-          />
+    <div class="service-list">
+      <div class="slider__content service-list__content"></div>
+      <div class="slider__desc-box service-list__desc-box">
+        <h3 class="slider__title">Our Innovative Services</h3>
+        <p class="slider__desc">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+      </div>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="service-card">
+            <div class="img-container service-card__img-container">
+              <img
+                class="img-container__img"
+                src="./assets/sample-web-image.jpg"
+                alt=""
+              />
+            </div>
+            <img
+              class="service-card__icon"
+              src="./assets/web-dev-service-circle.svg"
+              alt=""
+            />
+            <h3 class="service-card__title">Web Development</h3>
+            <hr style="width: 50%" />
+            <p class="service-card__desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button class="button service-card__button">Learn More</button>
+          </div>
         </div>
-        <p class="card__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <button class="button button__card">More Detail</button>
-      </div>
-      <div class="card">
-        <h3 class="card__title">Web Development</h3>
-        <div class="card__icon">
-          <img
-            src="./assets/web-dev-service-circle.svg"
-            alt="Web Development Service Image"
-          />
+        <div class="swiper-slide">
+          <div class="service-card">
+            <div class="img-container service-card__img-container">
+              <img
+                class="img-container__img"
+                src="./assets/sample-web-image.jpg"
+                alt=""
+              />
+            </div>
+            <img
+              class="service-card__icon"
+              src="./assets/web-dev-service-circle.svg"
+              alt=""
+            />
+            <h3 class="service-card__title">Web Development</h3>
+            <hr style="width: 50%" />
+            <p class="service-card__desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button class="button service-card__button">Learn More</button>
+          </div>
         </div>
-        <p class="card__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <button class="button button__card">More Detail</button>
-      </div>
-      <div class="card">
-        <h3 class="card__title">Web Development</h3>
-        <div class="card__icon">
-          <img
-            src="./assets/web-dev-service-circle.svg"
-            alt="Web Development Service Image"
-          />
+        <div class="swiper-slide">
+          <div class="service-card">
+            <div class="img-container service-card__img-container">
+              <img
+                class="img-container__img"
+                src="./assets/sample-web-image.jpg"
+                alt=""
+              />
+            </div>
+            <img
+              class="service-card__icon"
+              src="./assets/web-dev-service-circle.svg"
+              alt=""
+            />
+            <h3 class="service-card__title">Web Development</h3>
+            <hr style="width: 50%" />
+            <p class="service-card__desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button class="button service-card__button">Learn More</button>
+          </div>
         </div>
-        <p class="card__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <button class="button button__card">More Detail</button>
+        <div class="swiper-slide">
+          <div class="service-card">
+            <div class="img-container service-card__img-container">
+              <img
+                class="img-container__img"
+                src="./assets/sample-web-image.jpg"
+                alt=""
+              />
+            </div>
+            <img
+              class="service-card__icon"
+              src="./assets/web-dev-service-circle.svg"
+              alt=""
+            />
+            <h3 class="service-card__title">Web Development</h3>
+            <hr style="width: 50%" />
+            <p class="service-card__desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button class="button service-card__button">Learn More</button>
+          </div>
+        </div>
       </div>
-    </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
 
-    <div class="home-section">
-      <h2 class="home-section__title">We Are</h2>
-      <p class="home-section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-    </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
 
-    <div class="image-text">
-      <div class="image-text__left-content">
-        <img src="./assets/sample-about-us.jpg" alt="About Us Image" />
-      </div>
-      <div class="image-text__right-content">
-        <h3 class="image-text__title">
-          Amet minim mollit non deserunt ullamco
-        </h3>
-        <p class="image-text__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <p class="image-text__helper">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-      </div>
-    </div>
-
-    <div class="home-section">
-      <h2 class="home-section__title">We Are</h2>
-      <p class="home-section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-    </div>
-
-    <div class="article-box">
-      <div class="article">
-        <img
-          class="article__image"
-          src="./assets/sample-business.jpg"
-          alt="Article Thumbnail Image"
-        />
-        <h3 class="article__title">Title Here</h3>
-        <p class="article__date">September, 19th 2021</p>
-        <p class="article__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <button class="button article__button">Read More</button>
-      </div>
-      <div class="article">
-        <img
-          class="article__image"
-          src="./assets/sample-business.jpg"
-          alt="Article Thumbnail Image"
-        />
-        <h3 class="article__title">
-          Title Here Long Long Long Long Long Long Long
-        </h3>
-        <p class="article__date">September, 19th 2021</p>
-        <p class="article__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
-          ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-          duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-          amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-          amet sint. Velit officia consequat duis enim velit mollit.
-          Exercitation veniam consequat sunt nostrud amet.
-        </p>
-        <button class="button article__button">Read More</button>
-      </div>
-      <div class="article">
-        <img
-          class="article__image"
-          src="./assets/sample-business.jpg"
-          alt="Article Thumbnail Image"
-        />
-        <h3 class="article__title">Title Here</h3>
-        <p class="article__date">September, 19th 2021</p>
-        <p class="article__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <button class="button article__button">Read More</button>
-      </div>
-      <div class="article">
-        <img
-          class="article__image"
-          src="./assets/sample-business.jpg"
-          alt="Article Thumbnail Image"
-        />
-        <h3 class="article__title">Title Here</h3>
-        <p class="article__date">September, 19th 2021</p>
-        <p class="article__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <button class="button article__button">Read More</button>
-      </div>
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
     </div>
 
     <div class="footer">
@@ -340,6 +296,8 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <!-- swiperjs -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

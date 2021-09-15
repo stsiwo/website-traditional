@@ -4,6 +4,33 @@
 var sizeTablet = 426;
 var sizeLaptop = 769;
 
+/**
+ * plugin initializations
+ */
+// swiperjs
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    425: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
+});
+
 $(document).ready(function () {
   /**
    * reset nav's display: none to display: block when large screen

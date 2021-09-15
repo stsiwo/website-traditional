@@ -59,3 +59,35 @@ ref: https://stackoverflow.com/questions/33058004/applying-an-ellipsis-to-multil
 ### How to add tooltips?
 
 esp for if the text is truncated, i want to show the full text on a tooltip
+
+### How to ignore padding of a parent from its child element
+
+use negative margin.
+
+ref: https://stackoverflow.com/questions/4296530/ignore-parent-padding
+
+### Keep aspect ratio
+
+1. create a wrapper element.
+2. calculate aspect ratio: https://www.calculatorsoup.com/calculators/math/ratios.php
+3. set css below:
+
+```
+.img-container { // wrapper
+  // aspect ratio: 2.39: 1: 100% : 41.84
+  position: relative;
+  width: 100%;
+  padding-top: 41.84%;
+
+  // 41.84
+  &__img { // target element
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+```
