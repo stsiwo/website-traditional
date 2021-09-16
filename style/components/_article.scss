@@ -1,4 +1,5 @@
 @import "../abstracts/variables";
+@import "../abstracts/mixins";
 
 .article {
   padding: 8px;
@@ -12,9 +13,7 @@
   }
 
   &__title {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    @include ellipsis;
   }
 
   &__date {
@@ -23,13 +22,10 @@
   }
 
   &__desc {
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    @include clamp(4);
   }
 
-  &__button {
+  &__button-v2 {
     // align right
     float: right;
   }

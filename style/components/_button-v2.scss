@@ -1,0 +1,23 @@
+@import "../abstracts/variables";
+
+.button-v2 {
+  background-color: transparent;
+  border: none;
+  padding: 8px 32px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: $color-accent;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+
+.button-v2:hover {
+  box-shadow: $box-shadow;
+  background-color: $color-accent;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.button-v2:active {
+  box-shadow: $box-shadow-pushed;
+}

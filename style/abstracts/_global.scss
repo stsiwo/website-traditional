@@ -1,9 +1,14 @@
 @import "./variables";
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
   font-family: $font-family;
-  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -29,6 +34,11 @@ h5 {
 body {
   font-size: $font-size-body;
   padding: 0 $bodyPaddingWidth;
+  height: 100%;
+  width: 100%;
+}
+
+hr {
 }
 
 ul {

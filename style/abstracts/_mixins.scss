@@ -9,3 +9,16 @@
 @mixin error-text {
   color: $color-error;
 }
+
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin clamp($num-line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $num-line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

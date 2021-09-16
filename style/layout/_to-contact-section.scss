@@ -1,0 +1,15 @@
+@import "../abstracts/variables";
+
+.to-contact-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__left-content {
+    flex: 0 0 50%;
+  }
+
+  &__right-content {
+    flex: 0 0 50%;
+  }
+}

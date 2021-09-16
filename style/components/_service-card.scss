@@ -4,9 +4,13 @@
 .service-card {
   padding-bottom: 8px;
   box-shadow: $box-shadow;
-  width: 300px;
+  min-width: 300px;
   text-align: center;
   display: inline-block; // to disable margin collapse of 1st and last child
+
+  //@media screen and (max-width: $size-tablet - 1 + "px") {
+  //  width: 300px;
+  //}
 
   position: relative;
 
@@ -23,5 +27,6 @@
 
   &__desc {
     @include helper-text;
+    @include clamp(2);
   }
 }

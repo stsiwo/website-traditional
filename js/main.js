@@ -7,27 +7,42 @@ var sizeLaptop = 769;
 /**
  * plugin initializations
  */
-// swiperjs
+// swiperjs (services)
 const swiper = new Swiper(".swiper", {
   slidesPerView: 1,
   spaceBetween: 10,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
   breakpoints: {
     425: {
       slidesPerView: 1,
       spaceBetween: 10,
     },
-    768: {
+    956: {
       slidesPerView: 2,
       spaceBetween: 10,
     },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 50,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+const toArticleSectionSwiper = new Swiper(".to-article-section__swiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  breakpoints: {
+    425: {
+      slidesPerView: 1,
+      spaceBetween: 10,
     },
+    956: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+  },
+  pagination: {
+    el: ".to-article-section-swiper-pagination",
+    clickable: true,
   },
 });
 
@@ -47,6 +62,19 @@ $(document).ready(function () {
       $("#header-nav").css("display", "none");
     }
   });
+
+  /**
+   * fix the height of swiperjs esp when use the swiper element inside another element.
+   *
+   * see: https://github.com/nolimits4web/swiper/issues/48
+   */
+  //$(window).on("resize", function () {
+  //  var height = $(window).height();
+  //  var width = $(window).width();
+  //  $(".swiper-container, .swiper-slide").height(height);
+  //  $(".swiper-container, .swiper-slide").width(width);
+  //});
+  //$(window).trigger("resize");
 
   /**
    * toggle nav bar on mobile/tablet
