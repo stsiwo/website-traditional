@@ -11,6 +11,8 @@ here: https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4
 - normalizer
 - autoprefixes (automatically included in sass?)
 
+### Basics
+
 ## JS/jQuery
 
 ### Enable Typing for jQuery
@@ -134,3 +136,19 @@ because of the newer version?
 
 - you need to always wrap the content with empty <div>
 - when responsive, manually adjust breakpoints with devtools
+
+## Accessibility
+
+### outline: none on focus
+
+removing the outline on element (esp, input / textarea) is a bad practice based on Accessibility.
+
+what you can do is that you can change the style on target element but you must avoid that:
+
+- changing only color since people with colorblind may not be able to distinguish the focus state so you need to add a change based on the shape or animation on the element.
+
+## Animation
+
+### Border Expand Animation
+
+see: https://stackoverflow.com/questions/28623446/hover-effect-expand-bottom-border

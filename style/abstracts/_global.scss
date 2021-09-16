@@ -41,6 +41,11 @@ body {
 hr {
 }
 
+input,
+textarea {
+  outline: none;
+}
+
 ul {
   list-style-type: none;
   margin-block-start: 0em;

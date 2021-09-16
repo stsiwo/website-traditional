@@ -1,0 +1,73 @@
+@import "../abstracts/variables";
+
+.form {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  //@media screen and (max-width: $size-laptop - 1 + "px") {
+  //}
+
+  @media screen and (min-width: $size-laptop + "px") {
+    &__top-level {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & > * {
+        flex: 0 0 27%;
+      }
+    }
+  }
+
+  &__text-input {
+    width: 100%;
+    text-align: center;
+    margin: 16px 0;
+
+    position: relative;
+    &::after {
+      display: block;
+      content: " ";
+      border-bottom: solid 3px $color-accent;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+      transform-origin: 50% 50%;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: 50% 50%;
+    }
+
+    & > label {
+      display: inline-block;
+      @include helper-text;
+    }
+
+    & > input,
+    & > textarea {
+      position: relative;
+      width: 100%;
+      padding: 8px;
+      border: none;
+    }
+
+    // since there is no way to manipulate the 'after' pseudo when the input focused
+    // cannot use 'focus-within'
+    // cannot use '+ (after sibiling)/~ (general sibiling)' since the target is 'pseudo'
+    // you need to use js (esp, when the input is focused add this class to parent 'text-input' class)
+
+    // tricky one here.
+    // since js cannot access pseudo code, i just added a class called 'form__input-text_focus' to the parent div element
+    // and manipulate the 'after' by adding '::after'. it works.
+    &_focus::after {
+      transform: scaleX(1);
+      transform-origin: 50% 50%;
+    }
+  }
+
+  &__control {
+    text-align: center;
+  }
+}

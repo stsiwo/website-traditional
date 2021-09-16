@@ -217,4 +217,24 @@ $(document).ready(function () {
       $("#careers-sub-nav-item").slideToggle();
     }
   });
+
+  /**
+   * add border line on target text-input div when the child input is focused.
+   */
+  $(".form__text-input > input, .form__text-input > textarea").on(
+    "focus",
+    function () {
+      console.log("focused");
+      const parentEl = $(this).parent();
+      parentEl.addClass("form__text-input_focus");
+    }
+  );
+
+  $(".form__text-input > input, .form__text-input > textarea").on(
+    "blur",
+    function () {
+      const parentEl = $(this).parent();
+      parentEl.removeClass("form__text-input_focus");
+    }
+  );
 });
