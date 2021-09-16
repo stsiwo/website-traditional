@@ -91,3 +91,20 @@ ref: https://stackoverflow.com/questions/4296530/ignore-parent-padding
   }
 }
 ```
+
+### Slick vs Swiper
+
+use Slick for simple task
+
+use Swiper for multiple task
+
+- issue: cannot use multiple swipers at a single page.
+
+ref: https://helperbyte.com/questions/68866/which-is-better-in-your-slick-vs-swiper-and-what-is-missing
+
+## Issues
+
+### (issue-O7DhAYAX8-I): SwiperJS - cannot add multiple swipers with SwiperJS v7.0.0
+
+bug? the width of the second swiper always overflow and show horizontal scroll.
+because of the newer version?

@@ -8,50 +8,102 @@ var sizeLaptop = 769;
  * plugin initializations
  */
 // swiperjs (services)
-const swiper = new Swiper(".swiper", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  breakpoints: {
-    425: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    956: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+//const swiper = new Swiper(".swiper", {
+//  slidesPerView: 1,
+//  spaceBetween: 10,
+//  breakpoints: {
+//    425: {
+//      slidesPerView: 1,
+//      spaceBetween: 10,
+//    },
+//    956: {
+//      slidesPerView: 2,
+//      spaceBetween: 10,
+//    },
+//  },
+//  pagination: {
+//    el: ".swiper-pagination",
+//    clickable: true,
+//  },
+//});
 
-const toArticleSectionSwiper = new Swiper(".to-article-section__swiper", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  breakpoints: {
-    425: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    956: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-    },
-  },
-  pagination: {
-    el: ".to-article-section-swiper-pagination",
-    clickable: true,
-  },
-});
+/**
+ * when add multiple swipers, the second one does not work. esp the width overflow
+ */
+
+//const swiper2 = new Swiper(".swiper-2", {
+//  // Optional parameters
+//  // If we need pagination
+//  pagination: {
+//    el: ".swiper-pagination",
+//  },
+//
+//  // Navigation arrows
+//  navigation: {
+//    nextEl: ".swiper-button-next",
+//    prevEl: ".swiper-button-prev",
+//  },
+//
+//  // And if we need scrollbar
+//  scrollbar: {
+//    el: ".swiper-scrollbar",
+//  },
+//});
+//
+//const toArticleSectionSwiper = new Swiper(".to-article-section__swiper", {
+//  slidesPerView: 1,
+//  spaceBetween: 10,
+//  breakpoints: {
+//    425: {
+//      slidesPerView: 1,
+//      spaceBetween: 10,
+//    },
+//    956: {
+//      slidesPerView: 3,
+//      spaceBetween: 10,
+//    },
+//  },
+//  pagination: {
+//    el: ".to-article-section-swiper-pagination",
+//    clickable: true,
+//  },
+//});
 
 $(document).ready(function () {
+  /**
+   * initializer:
+   */
+  $(".service-list__slick").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    //centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1417,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 973,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+
   /**
    * reset nav's display: none to display: block when large screen
    */
   $(window).on("resize", function () {
-    console.log($(window).width());
     let currentScreenWidth = $(window).width();
     let targetNavDisplay = $("#header-nav").css("display");
     if (currentScreenWidth > sizeLaptop && targetNavDisplay == "none") {

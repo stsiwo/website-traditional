@@ -7,6 +7,7 @@
   min-width: 300px;
   text-align: center;
   display: inline-block; // to disable margin collapse of 1st and last child
+  margin: 8px;
 
   //@media screen and (max-width: $size-tablet - 1 + "px") {
   //  width: 300px;
@@ -19,6 +20,7 @@
     transform: translate(0, -50%);
     box-shadow: $box-shadow;
     border-radius: 50%; // to apply box-shadow circle, otherwise, it is applied for rectangle of image tag
+    margin: 0 auto;
   }
 
   &__title {
