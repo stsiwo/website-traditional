@@ -4,7 +4,7 @@
 .article {
   padding: 8px;
   box-shadow: $box-shadow;
-  width: 300px;
+  min-width: 300px;
   display: inline-block; // to disable margin collapse of 1st and last child
 
   &__image {

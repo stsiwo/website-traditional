@@ -100,6 +100,48 @@ $(document).ready(function () {
     ],
   });
 
+  // to-article-secstion__slick
+  $(".to-article-secstion__slick").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    //centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1227,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 916,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 630,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+
   /**
    * reset nav's display: none to display: block when large screen
    */

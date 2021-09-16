@@ -108,3 +108,10 @@ ref: https://helperbyte.com/questions/68866/which-is-better-in-your-slick-vs-swi
 
 bug? the width of the second swiper always overflow and show horizontal scroll.
 because of the newer version?
+
+## Slick library
+
+### ussage
+
+- you need to always wrap the content with empty <div>
+- when responsive, manually adjust breakpoints with devtools
