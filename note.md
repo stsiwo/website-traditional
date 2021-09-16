@@ -102,6 +102,25 @@ use Swiper for multiple task
 
 ref: https://helperbyte.com/questions/68866/which-is-better-in-your-slick-vs-swiper-and-what-is-missing
 
+### How to keep aspect ratio for vertical-long image?
+
+```
+  // aspect ratio: 1: 1.66: 60% : 100%
+  position: relative;
+  width: 100%;
+  padding-top: 166%; // height / width * 100 = 1.66 / 1 * 100 = 166
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+```
+
 ## Issues
 
 ### (issue-O7DhAYAX8-I): SwiperJS - cannot add multiple swipers with SwiperJS v7.0.0

@@ -1,15 +1,28 @@
 @import "../abstracts/variables";
 
 .to-contact-section {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  &__left-content {
-    flex: 0 0 50%;
-  }
+  background-color: $color-primary;
+  padding: 80px 0;
 
   &__right-content {
-    flex: 0 0 50%;
+    text-align: center;
+  }
+
+  @media screen and (max-width: $size-tablet - 1 + "px") {
+  }
+
+  @media screen and (min-width: $size-laptop + "px") {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__left-content {
+      flex: 0 0 45%;
+    }
+
+    &__right-content {
+      flex: 0 0 45%;
+      text-align: center;
+    }
   }
 }
