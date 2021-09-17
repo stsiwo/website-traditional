@@ -1,0 +1,11 @@
+@import "../abstracts/variables";
+
+.mission {
+  box-shadow: $box-shadow;
+  text-align: center;
+  padding: 16px 8px;
+
+  &__desc {
+    @include helper-text;
+  }
+}

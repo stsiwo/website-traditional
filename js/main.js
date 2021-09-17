@@ -73,6 +73,10 @@ $(document).ready(function () {
   /**
    * initializer:
    */
+
+  /**
+   * service list at service page
+   */
   $(".service-list__slick").slick({
     infinite: true,
     slidesToShow: 3,
@@ -100,6 +104,9 @@ $(document).ready(function () {
     ],
   });
 
+  /**
+   * article list at to-artist section
+   */
   // to-article-secstion__slick
   $(".to-article-secstion__slick").slick({
     infinite: true,
@@ -108,6 +115,47 @@ $(document).ready(function () {
     //centerMode: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1227,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 916,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 630,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+
+  /**
+   * team member slick at our-team-section
+   */
+  $(".our-team-section__slick").slick({
+    centerMode: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
     responsive: [
       {
         breakpoint: 2000,

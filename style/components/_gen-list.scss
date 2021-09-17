@@ -1,0 +1,14 @@
+@import "../abstracts/variables";
+
+.gen-list {
+  &__item {
+    // ref-berq4IjPLV2
+    margin: 8px 0;
+  }
+
+  &__icon {
+    color: $color-accent;
+    font-size: $font-size-h1;
+    vertical-align: middle;
+  }
+}

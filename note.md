@@ -130,9 +130,13 @@ ref: https://helperbyte.com/questions/68866/which-is-better-in-your-slick-vs-swi
 bug? the width of the second swiper always overflow and show horizontal scroll.
 because of the newer version?
 
+### (issue-): Slick - centeredMode not working. not getting bigger when target item is centered.
+
+ref: https://github.com/kenwheeler/slick/issues/1302
+
 ## Slick library
 
-### ussage
+### usage
 
 - you need to always wrap the content with empty <div>
 - when responsive, manually adjust breakpoints with devtools
@@ -152,3 +156,20 @@ what you can do is that you can change the style on target element but you must 
 ### Border Expand Animation
 
 see: https://stackoverflow.com/questions/28623446/hover-effect-expand-bottom-border
+
+## Refs
+
+### (ref-berq4IjPLV2): Google Material Design Icon Usage
+
+1. det the style link and put it on head tag.
+2. use cases:
+
+- html (e.g., <i class="...">)
+- css (e.g., font-family: GoogleMaterialIcons)
+
+3. find the icon code from (here)[https://fonts.google.com/icons]
+
+ref: https://stackoverflow.com/questions/40194077/how-to-set-the-css-content-property-with-a-google-material-icon
+ref: https://www.tutorialspoint.com/web_icons/material_icons.htm
+
+2021/09/16: better to use html <i> rather than css content since the css cannot change the size.

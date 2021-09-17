@@ -13,6 +13,10 @@
 @import "./components/service-card";
 @import "./components/img-container";
 @import "./components/form";
+@import "./components/gen-list";
+@import "./components/mission";
+@import "./components/aspect-1-1-wrapper";
+@import "./components/team-member";
 
 @import "./layout/header";
 @import "./layout/footer";
@@ -25,5 +29,11 @@
 @import "./layout/service-list";
 @import "./layout/to-contact-section";
 @import "./layout/to-article-section";
+@import "./layout/to-about-us-section";
+@import "./layout/contact-section";
+@import "./layout/our-mission-section";
+@import "./layout/three-missions";
+@import "./layout/out-team-section";
+@import "./layout/about-us-section";
 
 @import "./vendors/slick-overriden";

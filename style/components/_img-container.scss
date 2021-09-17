@@ -20,6 +20,10 @@
 
 .img-container-1-166 {
   // aspect ratio: 1: 1.66: 60% : 100%
+
+  // note
+  // usually, width: 100% and padding-top: 166%
+  // but, it was too big so reduced to width: 50% and padding-top: 83% by half
   position: relative;
   width: 50%;
   padding-top: 83%; // height / width * 100 = 1.66 / 1 * 100 = 166
@@ -34,5 +38,69 @@
 
     box-shadow: $box-shadow;
     border-radius: 3px;
+  }
+}
+
+.img-container-21-9 {
+  // aspect ratio: 21: 9: 100% :43%
+
+  @media screen and (max-width: $size-laptop - 1  + "px") {
+    position: relative;
+    width: 100%;
+    padding-top: 43%;
+
+    // 41.84
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      transform: translate(0, -25%);
+
+      box-shadow: $box-shadow;
+      border-radius: 3px;
+    }
+  }
+
+  @media screen and (min-width: $size-laptop + "px") {
+    position: relative;
+    width: 50%;
+    padding-top: 21.5%;
+
+    // 41.84
+    &__img {
+      position: absolute;
+      //top: 50%;
+      left: 50%;
+      transform: translate(0, -25%);
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+
+      box-shadow: $box-shadow;
+      border-radius: 3px;
+    }
+  }
+}
+
+.img-container-16-10 {
+  // aspect ratio: 2.39: 1: 100% : 41.84
+  position: relative;
+  width: 100%;
+  padding-top: 63%;
+
+  // 41.84
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
   }
 }
