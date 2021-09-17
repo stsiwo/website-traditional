@@ -1,0 +1,25 @@
+@import "../abstracts/variables";
+
+.careers-carousel-section {
+  &__content {
+    position: relative;
+  }
+
+  &__content-img {
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+  }
+
+  &__bg {
+    height: 80%;
+    background-color: #ff6500;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: -1;
+    box-shadow: $box-shadow;
+  }
+}

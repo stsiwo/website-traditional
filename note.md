@@ -134,6 +134,16 @@ because of the newer version?
 
 ref: https://github.com/kenwheeler/slick/issues/1302
 
+### (issue-0sylw6Qk1wh): Slick - height is too big for each slider
+
+you can override the following:
+
+```
+.slick-slide {
+  height: auto;
+}
+```
+
 ## Slick library
 
 ### usage

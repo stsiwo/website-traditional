@@ -376,6 +376,34 @@ a {
   height: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .img-container-16-9 {
+    position: relative;
+    width: 100%;
+    padding-top: 56%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .img-container-16-9 {
+    position: relative;
+    width: 50%;
+    padding-top: 28%;
+    margin: 0 auto;
+  }
+}
+
+.img-container-16-9__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .form {
   width: 100%;
   max-width: 1200px;
@@ -903,5 +931,34 @@ a {
 
 .about-us-section {
   text-align: center;
+}
+
+.careers-carousel-section__content {
+  position: relative;
+}
+
+.careers-carousel-section__content-img {
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.careers-carousel-section__bg {
+  height: 80%;
+  background-color: #ff6500;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: -1;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slick-slide {
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */

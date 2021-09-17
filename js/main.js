@@ -191,6 +191,20 @@ $(document).ready(function () {
   });
 
   /**
+   * careers carousel
+   */
+  $(".careers-carousel-section__slick").slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 500,
+    fade: true,
+    //variableWidth: true,
+    cssEase: "linear",
+  });
+
+  /**
    * reset nav's display: none to display: block when large screen
    */
   $(window).on("resize", function () {
