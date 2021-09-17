@@ -299,4 +299,18 @@ $(document).ready(function () {
       parentEl.removeClass("form__text-input_focus");
     }
   );
+
+  /**
+   * slidetoggle at career-card desc when hover
+   */
+  $(".career-card").on("mouseenter", function () {
+    const targetDescEl = $(this).find(".career-card__desc-box");
+    //targetDescEl.removeClass("career-card__desc-box-hidden");
+    targetDescEl.slideToggle();
+  });
+  $(".career-card").on("mouseleave", function () {
+    const targetDescEl = $(this).find(".career-card__desc-box");
+    //targetDescEl.addClass("career-card__desc-box-hidden");
+    targetDescEl.slideToggle();
+  });
 });

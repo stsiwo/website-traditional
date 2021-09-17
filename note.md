@@ -123,6 +123,16 @@ ref: https://helperbyte.com/questions/68866/which-is-better-in-your-slick-vs-swi
   }
 ```
 
+### What is Delegation in jQuery
+
+delegate the event handler to a parent element when an event is triggered on one of the children.
+
+Why use? this is because if the number of the children dynamically changes, an added element cannot handle the event since this is added after initialization (e.g., $("...").on("..."))
+
+takes an advantage of event bubbling so that parent element can catch the event and find the target child element and handle the event.
+
+see: https://stackoverflow.com/questions/8110934/direct-vs-delegated-jquery-on
+
 ## Issues
 
 ### (issue-O7DhAYAX8-I): SwiperJS - cannot add multiple swipers with SwiperJS v7.0.0

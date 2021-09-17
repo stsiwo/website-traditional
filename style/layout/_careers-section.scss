@@ -1,0 +1,15 @@
+@import "../abstracts/variables";
+
+.careers-section {
+  &__career-list {
+    padding: 0 16px;
+    display: grid;
+    align-items: center;
+    column-gap: 16px;
+    row-gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+
+    & > * {
+    }
+  }
+}

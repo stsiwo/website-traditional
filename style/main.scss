@@ -15,8 +15,9 @@
 @import "./components/form";
 @import "./components/gen-list";
 @import "./components/mission";
-@import "./components/aspect-1-1-wrapper";
+@import "./components/aspect-wrapper";
 @import "./components/team-member";
+@import "./components/career-card";
 
 @import "./layout/header";
 @import "./layout/footer";
@@ -35,6 +36,7 @@
 @import "./layout/three-missions";
 @import "./layout/out-team-section";
 @import "./layout/about-us-section";
+@import "./layout/careers-section";
 @import "./layout/careers-carousel-section";
 
 @import "./vendors/slick-overriden";
