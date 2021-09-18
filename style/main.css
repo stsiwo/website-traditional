@@ -147,6 +147,7 @@ a {
   border-radius: 10px;
   color: #fff;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button:active {
@@ -164,6 +165,7 @@ a {
   text-transform: uppercase;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 
 .button-v2:hover {
@@ -404,6 +406,23 @@ a {
   height: 100%;
 }
 
+.img-container-9-16 {
+  position: relative;
+  width: 100%;
+  padding-top: 178%;
+  margin: 0 auto;
+}
+
+.img-container-9-16 > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .form {
   width: 100%;
   max-width: 1200px;
@@ -536,6 +555,23 @@ a {
   height: 100%;
 }
 
+.aspect-9-16-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 178%;
+  margin: 0 auto;
+}
+
+.aspect-9-16-wrapper > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .team-member {
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -606,6 +642,110 @@ a {
 }
 
 .career-card__hr {
+  background-color: #ff6500;
+  height: 1px;
+  border: none;
+}
+
+.article-card {
+  position: relative;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.article-card__img {
+  border-radius: 5px;
+}
+
+.article-card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.article-card__title {
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.article-card:hover .article-card__title {
+  color: #000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.article-card__date {
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.article-card:hover .article-card__date {
+  color: #000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.article-card__desc-box {
+  margin-bottom: 8px;
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.article-card:hover .article-card__desc-box {
+  color: #000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.article-card__img-gradient {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.article-card:hover > .article-card__hover-effect {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.article-card__hover-effect {
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.article-card__hr {
   background-color: #ff6500;
   height: 1px;
   border: none;
@@ -996,6 +1136,10 @@ a {
   text-align: center;
 }
 
+.careers-section {
+  margin: 160px 0;
+}
+
 .careers-section__career-list {
   padding: 0 16px;
   display: -ms-grid;
@@ -1010,17 +1154,38 @@ a {
       grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
-.careers-carousel-section__content {
+.articles-section {
+  margin: 160px 0;
+}
+
+.articles-section__article-list {
+  padding: 0 16px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+  row-gap: 24px;
+  -ms-grid-columns: (minmax(300px, 300px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+}
+
+.carousel-section__content {
   position: relative;
 }
 
-.careers-carousel-section__content-img {
+.carousel-section__content-img {
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 
-.careers-carousel-section__bg {
+.carousel-section__bg {
   height: 80%;
   background-color: #ff6500;
   position: absolute;

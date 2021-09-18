@@ -1,14 +1,15 @@
 @import "../abstracts/variables";
 
-.careers-section {
+.articles-section {
   margin: 160px 0;
-  &__career-list {
+  &__article-list {
     padding: 0 16px;
     display: grid;
+    justify-content: center;
     align-items: center;
     column-gap: 16px;
     row-gap: 24px;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
 
     & > * {
     }

@@ -193,7 +193,7 @@ $(document).ready(function () {
   /**
    * careers carousel
    */
-  $(".careers-carousel-section__slick").slick({
+  $(".carousel-section__slick").slick({
     dots: true,
     infinite: true,
     autoplay: true,
