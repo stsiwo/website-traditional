@@ -29,7 +29,7 @@
     &::after {
       display: block;
       content: " ";
-      border-bottom: solid 3px $color-accent;
+      border-bottom: solid 2px $color-accent;
       transform: scaleX(0);
       transition: transform 250ms ease-in-out;
       transform-origin: 50% 50%;

@@ -36,7 +36,7 @@
   <body>
     <!-- header -->
     <header class="header">
-      <a href="/" class="logo-box header__logo-box">
+      <a class="logo-box header__logo-box" href="/">
         <img src="./assets/logo.svg" alt="stsDev Logo Image" />
         <h2 class="logo-box__title">stsDev</h2>
       </a>
@@ -49,7 +49,7 @@
         </div>
         <ul>
           <li id="services-nav-item" class="nav__item">
-            <a href="" class="link nav__link">Services</a>
+            <a href="/services.html" class="link nav__link">Services</a>
             <ul
               id="services-sub-nav-item"
               class="nav__sub-nav nav__sub-nav_hidden"
@@ -60,46 +60,53 @@
                 >
               </li>
               <li class="nav__sub-item">
-                <a href="" class="link nav__link">Mobile Development</a>
+                <a href="/service.html" class="link nav__link"
+                  >Mobile Development</a
+                >
               </li>
               <li class="nav__sub-item">
-                <a href="" class="link nav__link">Software Consulting</a>
+                <a href="/service.html" class="link nav__link"
+                  >Software Consulting</a
+                >
               </li>
             </ul>
           </li>
           <li class="nav__item">
-            <a href="" class="link nav__link">About Us</a>
+            <a href="/about-us.html" class="link nav__link">About Us</a>
           </li>
           <li id="careers-nav-item" class="nav__item">
-            <a href="" class="link nav__link">Careers</a>
+            <a href="/careers.html" class="link nav__link">Careers</a>
             <ul
               id="careers-sub-nav-item"
               class="nav__sub-nav nav__sub-nav_hidden"
             >
               <li class="nav__sub-item">
-                <a href="" class="link nav__link">Web Designer</a>
+                <a href="/career.html" class="link nav__link">Web Designer</a>
               </li>
               <li class="nav__sub-item">
-                <a href="" class="link nav__link">Full Stack Web Developer</a>
+                <a href="/career.html" class="link nav__link"
+                  >Full Stack Web Developer</a
+                >
               </li>
               <li class="nav__sub-item">
-                <a href="" class="link nav__link">Android Developer</a>
+                <a href="/career.html" class="link nav__link"
+                  >Android Developer</a
+                >
               </li>
             </ul>
           </li>
           <li class="nav__item">
-            <a href="" class="link nav__link">Contact Us</a>
+            <a href="/contact-us.html" class="link nav__link">Contact Us</a>
           </li>
           <li class="nav__item">
-            <a href="" class="link nav__link">Articles</a>
+            <a href="/articles.html" class="link nav__link">Articles</a>
           </li>
           <li class="nav__item">
-            <a href="" class="link nav__link">Sign Up</a>
+            <a href="./signup.html" class="link nav__link">Sign Up</a>
           </li>
         </ul>
       </nav>
     </header>
-
     <div class="home-section">
       <h2 class="home-section__title">Web Development Service</h2>
       <p class="home-section__desc">
@@ -150,56 +157,56 @@
     </div>
 
     <!-- out tech stack -->
-    <div class="home-section">
-      <h2 class="home-section__title">Tech Stack</h2>
-      <p class="home-section__desc">
+    <div class="tech-stack-section">
+      <h2 class="tech-stack-section__title">Tech Stack</h2>
+      <p class="tech-stack-section__desc">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
-    </div>
-    <div class="tech-stack-section">
-      <div class="card-v3">
-        <div class="card-v3__icon-box">
-          <img src="./assets/react.svg" alt="" />
+      <div class="card-v3-list tech-stack-section__card-v3-list">
+        <div class="card-v3">
+          <div class="card-v3__icon-box">
+            <img src="./assets/react.svg" alt="" />
+          </div>
+          <hr style="width: 50%" class="card-v3__hr" />
+          <p class="card-v3__title">React.js</p>
         </div>
-        <hr style="width: 50%" class="card-v3__hr" />
-        <p class="card-v3__title">React.js</p>
-      </div>
-      <div class="card-v3">
-        <div class="card-v3__icon-box">
-          <img src="./assets/angular.svg" alt="" />
+        <div class="card-v3">
+          <div class="card-v3__icon-box">
+            <img src="./assets/angular.svg" alt="" />
+          </div>
+          <hr style="width: 50%" class="card-v3__hr" />
+          <p class="card-v3__title">Angular</p>
         </div>
-        <hr style="width: 50%" class="card-v3__hr" />
-        <p class="card-v3__title">Angular</p>
-      </div>
-      <div class="card-v3">
-        <div class="card-v3__icon-box">
-          <img src="./assets/php.svg" alt="" />
+        <div class="card-v3">
+          <div class="card-v3__icon-box">
+            <img src="./assets/php.svg" alt="" />
+          </div>
+          <hr style="width: 50%" class="card-v3__hr" />
+          <p class="card-v3__title">PHP</p>
         </div>
-        <hr style="width: 50%" class="card-v3__hr" />
-        <p class="card-v3__title">PHP</p>
-      </div>
-      <div class="card-v3">
-        <div class="card-v3__icon-box">
-          <img src="./assets/java.svg" alt="" />
+        <div class="card-v3">
+          <div class="card-v3__icon-box">
+            <img src="./assets/java.svg" alt="" />
+          </div>
+          <hr style="width: 50%" class="card-v3__hr" />
+          <p class="card-v3__title">Java</p>
         </div>
-        <hr style="width: 50%" class="card-v3__hr" />
-        <p class="card-v3__title">Java</p>
-      </div>
-      <div class="card-v3">
-        <div class="card-v3__icon-box">
-          <img src="./assets/js.svg" alt="" />
+        <div class="card-v3">
+          <div class="card-v3__icon-box">
+            <img src="./assets/js.svg" alt="" />
+          </div>
+          <hr style="width: 50%" class="card-v3__hr" />
+          <p class="card-v3__title">JS</p>
         </div>
-        <hr style="width: 50%" class="card-v3__hr" />
-        <p class="card-v3__title">JS</p>
-      </div>
-      <div class="card-v3">
-        <div class="card-v3__icon-box">
-          <img src="./assets/python.svg" alt="" />
+        <div class="card-v3">
+          <div class="card-v3__icon-box">
+            <img src="./assets/python.svg" alt="" />
+          </div>
+          <hr style="width: 50%" class="card-v3__hr" />
+          <p class="card-v3__title">Python</p>
         </div>
-        <hr style="width: 50%" class="card-v3__hr" />
-        <p class="card-v3__title">Python</p>
       </div>
     </div>
 

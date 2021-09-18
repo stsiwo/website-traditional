@@ -84,6 +84,8 @@ $(document).ready(function () {
     //centerMode: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    prevArrow: false,
+    nextArrow: false,
     responsive: [
       {
         breakpoint: 1417,
@@ -115,6 +117,9 @@ $(document).ready(function () {
     //centerMode: true,
     autoplay: true,
     autoplaySpeed: 2000,
+
+    prevArrow: false,
+    nextArrow: false,
     responsive: [
       {
         breakpoint: 2000,
@@ -156,6 +161,8 @@ $(document).ready(function () {
     centerMode: true,
     centerPadding: "60px",
     slidesToShow: 3,
+    prevArrow: false,
+    nextArrow: false,
     responsive: [
       {
         breakpoint: 2000,
@@ -202,6 +209,8 @@ $(document).ready(function () {
     fade: true,
     //variableWidth: true,
     cssEase: "linear",
+    prevArrow: false,
+    nextArrow: false,
   });
 
   /**

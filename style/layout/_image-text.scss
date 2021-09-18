@@ -1,16 +1,24 @@
 @import "../abstracts/variables";
 
 .image-text {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  //display: flex;
+  //justify-content: space-around;
+  //align-items: center;
+  //flex-wrap: wrap;
+
   background-color: $color-accent;
-  border-radius: 6px;
   box-shadow: $box-shadow;
-  flex-wrap: wrap;
+  border-radius: 6px;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  row-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   &__left-content {
-    flex: 1 0 45%;
+    //flex: 1 0 45%;
     min-width: 300px;
     padding: 16px;
 
@@ -25,7 +33,9 @@
   }
 
   &__right-content {
-    flex: 0 0 45%;
     padding: 16px;
+    //@media screen and (max-width: $size-tablet - 1 + px) {
+    //  padding-top: 0;
+    //}
   }
 }
