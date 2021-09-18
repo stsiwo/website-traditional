@@ -36,6 +36,10 @@ body {
   padding: 0 $bodyPaddingWidth;
   height: 100%;
   width: 100%;
+
+  // header aument
+  position: relative;
+  top: $header-height;
 }
 
 hr {

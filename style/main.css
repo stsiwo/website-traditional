@@ -35,6 +35,8 @@ body {
   padding: 0 8px;
   height: 100%;
   width: 100%;
+  position: relative;
+  top: 50px;
 }
 
 input,
@@ -797,6 +799,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 50px;
   margin: 0 8px;
   z-index: 1000;
   position: fixed;
@@ -1354,6 +1357,19 @@ a {
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   text-align: center;
+}
+
+.article-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.article-section__title {
+  text-align: center;
+}
+
+.article-section__date {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .slick-slide {

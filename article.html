@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -35,7 +36,7 @@
   <body>
     <!-- header -->
     <header class="header">
-      <a class="logo-box header__logo-box" href="/">
+      <a href="/" class="logo-box header__logo-box">
         <img src="./assets/logo.svg" alt="stsDev Logo Image" />
         <h2 class="logo-box__title">stsDev</h2>
       </a>
@@ -48,13 +49,15 @@
         </div>
         <ul>
           <li id="services-nav-item" class="nav__item">
-            <a href="/services.html" class="link nav__link">Services</a>
+            <a href="" class="link nav__link">Services</a>
             <ul
               id="services-sub-nav-item"
               class="nav__sub-nav nav__sub-nav_hidden"
             >
               <li class="nav__sub-item">
-                <a href="" class="link nav__link">Web Development</a>
+                <a href="/service.html" class="link nav__link"
+                  >Web Development</a
+                >
               </li>
               <li class="nav__sub-item">
                 <a href="" class="link nav__link">Mobile Development</a>
@@ -97,230 +100,110 @@
       </nav>
     </header>
 
-    <div class="home-section">
-      <h2 class="home-section__title">Articles</h2>
-      <p class="home-section__desc">
+    <div class="article-section">
+      <h2 class="article-section__title">Article 1</h2>
+      <p class="article-section__desc">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
-    </div>
-
-    <div class="carousel-section">
-      <p class="carousel-section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
+      <p class="article-section__date">September, 19 2021</p>
+      <div class="img-container-16-10">
+        <img
+          src="./assets/group-picture.jpg"
+          alt=""
+          class="img-container-16-10__img"
+        />
+      </div>
+      <p class="article-section__content">
+        "On the other hand, we denounce with righteous indignation and dislike
+        men who are so beguiled and demoralized by the charms of pleasure of the
+        moment, so blinded by desire, that they cannot foresee the pain and
+        trouble that are bound to ensue; and equal blame belongs to those who
+        fail in their duty through weakness of will, which is the same as saying
+        through shrinking from toil and pain. These cases are perfectly simple
+        and easy to distinguish. In a free hour, when our power of choice is
+        untrammelled and when nothing prevents our being able to do what we like
+        best, every pleasure is to be welcomed and every pain avoided. But in
+        certain circumstances and owing to the claims of duty or the obligations
+        of business it will frequently occur that pleasures have to be
+        repudiated and annoyances accepted. The wise man therefore always holds
+        in these matters to this principle of selection: he rejects pleasures to
+        secure other greater pleasures, or else he endures pains to avoid worse
+        pains."
       </p>
-      <div class="carousel-section__content">
-        <div class="carousel-section__slick">
-          <div>
-            <div class="img-container-16-9">
-              <img
-                src="./assets/career-1.jpg"
-                alt=""
-                class="img-container-16-9__img carousel-section__content-img"
-              />
-            </div>
-          </div>
-          <div>
-            <div class="img-container-16-9">
-              <img
-                src="./assets/career-2.jpg"
-                alt=""
-                class="img-container-16-9__img carousel-section__content-img"
-              />
-            </div>
-          </div>
-          <div>
-            <div class="img-container-16-9">
-              <img
-                src="./assets/career-3.jpg"
-                alt=""
-                class="img-container-16-9__img carousel-section__content-img"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="carousel-section__bg"></div>
-      </div>
-    </div>
-
-    <!-- filter -->
-
-    <!-- article list-->
-    <div class="articles-section">
-      <p class="articles-section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
+      <p class="article-section__content">
+        "On the other hand, we denounce with righteous indignation and dislike
+        men who are so beguiled and demoralized by the charms of pleasure of the
+        moment, so blinded by desire, that they cannot foresee the pain and
+        trouble that are bound to ensue; and equal blame belongs to those who
+        fail in their duty through weakness of will, which is the same as saying
+        through shrinking from toil and pain. These cases are perfectly simple
+        and easy to distinguish. In a free hour, when our power of choice is
+        untrammelled and when nothing prevents our being able to do what we like
+        best, every pleasure is to be welcomed and every pain avoided. But in
+        certain circumstances and owing to the claims of duty or the obligations
+        of business it will frequently occur that pleasures have to be
+        repudiated and annoyances accepted. The wise man therefore always holds
+        in these matters to this principle of selection: he rejects pleasures to
+        secure other greater pleasures, or else he endures pains to avoid worse
+        pains."
       </p>
-      <div class="article-list articles-section__article-list">
-        <div class="article-card aspect-9-16-wrapper">
-          <div class="img-container-9-16 article-card__img">
-            <img
-              src="./assets/blog-1.jpg"
-              alt=""
-              class="
-                img-container-16-9__img
-                articles-carousel-section__content-img
-              "
-            />
-          </div>
-          <div class="img-gradient article-card__img-gradient"></div>
-          <div class="hover-effect article-card__hover-effect"></div>
-          <div class="article-card__overlay">
-            <h3 class="article-card__title">Full Stack Web Developer</h3>
-            <hr style="width: 50%" class="article-card__hr" />
-            <p class="article-card__date">September, 29th 2021</p>
-            <div class="article-card__desc-box">
-              <p class="article-card__desc">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-            <div class="article-card__control">
-              <a class="button-v2 article-card__button-v2" href="/article.html">
-                Learn More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="article-card aspect-9-16-wrapper">
-          <div class="img-container-9-16 article-card__img">
-            <img
-              src="./assets/blog-1.jpg"
-              alt=""
-              class="
-                img-container-16-9__img
-                articles-carousel-section__content-img
-              "
-            />
-          </div>
-          <div class="img-gradient article-card__img-gradient"></div>
-          <div class="hover-effect article-card__hover-effect"></div>
-          <div class="article-card__overlay">
-            <h3 class="article-card__title">Full Stack Web Developer</h3>
-            <hr style="width: 50%" class="article-card__hr" />
-            <p class="article-card__date">September, 29th 2021</p>
-            <div class="article-card__desc-box">
-              <p class="article-card__desc">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-            <div class="article-card__control">
-              <a class="button-v2 article-card__button-v2" href="/article.html">
-                Learn More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="article-card aspect-9-16-wrapper">
-          <div class="img-container-9-16 article-card__img">
-            <img
-              src="./assets/blog-1.jpg"
-              alt=""
-              class="
-                img-container-16-9__img
-                articles-carousel-section__content-img
-              "
-            />
-          </div>
-          <div class="img-gradient article-card__img-gradient"></div>
-          <div class="hover-effect article-card__hover-effect"></div>
-          <div class="article-card__overlay">
-            <h3 class="article-card__title">Full Stack Web Developer</h3>
-            <hr style="width: 50%" class="article-card__hr" />
-            <p class="article-card__date">September, 29th 2021</p>
-            <div class="article-card__desc-box">
-              <p class="article-card__desc">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-            <div class="article-card__control">
-              <a class="button-v2 article-card__button-v2" href="/article.html">
-                Learn More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="article-card aspect-9-16-wrapper">
-          <div class="img-container-9-16 article-card__img">
-            <img
-              src="./assets/blog-1.jpg"
-              alt=""
-              class="
-                img-container-16-9__img
-                articles-carousel-section__content-img
-              "
-            />
-          </div>
-          <div class="img-gradient article-card__img-gradient"></div>
-          <div class="hover-effect article-card__hover-effect"></div>
-          <div class="article-card__overlay">
-            <h3 class="article-card__title">Full Stack Web Developer</h3>
-            <hr style="width: 50%" class="article-card__hr" />
-            <p class="article-card__date">September, 29th 2021</p>
-            <div class="article-card__desc-box">
-              <p class="article-card__desc">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-            <div class="article-card__control">
-              <a class="button-v2 article-card__button-v2" href="/article.html">
-                Learn More
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- pagination -->
-
-    <div class="home-section">
-      <h2 class="home-section__title">Contact Us</h2>
-      <p class="home-section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
+      <p class="article-section__content">
+        "On the other hand, we denounce with righteous indignation and dislike
+        men who are so beguiled and demoralized by the charms of pleasure of the
+        moment, so blinded by desire, that they cannot foresee the pain and
+        trouble that are bound to ensue; and equal blame belongs to those who
+        fail in their duty through weakness of will, which is the same as saying
+        through shrinking from toil and pain. These cases are perfectly simple
+        and easy to distinguish. In a free hour, when our power of choice is
+        untrammelled and when nothing prevents our being able to do what we like
+        best, every pleasure is to be welcomed and every pain avoided. But in
+        certain circumstances and owing to the claims of duty or the obligations
+        of business it will frequently occur that pleasures have to be
+        repudiated and annoyances accepted. The wise man therefore always holds
+        in these matters to this principle of selection: he rejects pleasures to
+        secure other greater pleasures, or else he endures pains to avoid worse
+        pains."
       </p>
-    </div>
-
-    <div class="to-contact-section">
-      <div class="to-contact-section__left-content">
-        <div class="img-container-1-166">
-          <img
-            class="img-container-1-166__img"
-            src="./assets/sample-contact-us-vertical-image.jpg"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="to-contact-section__right-content">
-        <h3 class="to-contact-section__title">
-          Our goal is to provide efficiency and quality on time projects
-        </h3>
-        <p class="to-contact-section__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <button class="button to-contact-section__button">
-          Contact Us Now
-        </button>
-      </div>
+      <p class="article-section__content">
+        "On the other hand, we denounce with righteous indignation and dislike
+        men who are so beguiled and demoralized by the charms of pleasure of the
+        moment, so blinded by desire, that they cannot foresee the pain and
+        trouble that are bound to ensue; and equal blame belongs to those who
+        fail in their duty through weakness of will, which is the same as saying
+        through shrinking from toil and pain. These cases are perfectly simple
+        and easy to distinguish. In a free hour, when our power of choice is
+        untrammelled and when nothing prevents our being able to do what we like
+        best, every pleasure is to be welcomed and every pain avoided. But in
+        certain circumstances and owing to the claims of duty or the obligations
+        of business it will frequently occur that pleasures have to be
+        repudiated and annoyances accepted. The wise man therefore always holds
+        in these matters to this principle of selection: he rejects pleasures to
+        secure other greater pleasures, or else he endures pains to avoid worse
+        pains."
+      </p>
+      <p class="article-section__content">
+        "On the other hand, we denounce with righteous indignation and dislike
+        men who are so beguiled and demoralized by the charms of pleasure of the
+        moment, so blinded by desire, that they cannot foresee the pain and
+        trouble that are bound to ensue; and equal blame belongs to those who
+        fail in their duty through weakness of will, which is the same as saying
+        through shrinking from toil and pain. These cases are perfectly simple
+        and easy to distinguish. In a free hour, when our power of choice is
+        untrammelled and when nothing prevents our being able to do what we like
+        best, every pleasure is to be welcomed and every pain avoided. But in
+        certain circumstances and owing to the claims of duty or the obligations
+        of business it will frequently occur that pleasures have to be
+        repudiated and annoyances accepted. The wise man therefore always holds
+        in these matters to this principle of selection: he rejects pleasures to
+        secure other greater pleasures, or else he endures pains to avoid worse
+        pains."
+      </p>
     </div>
 
     <div class="home-section">
-      <h2 class="home-section__title">To Article Section</h2>
+      <h2 class="home-section__title">Related Articles</h2>
       <p class="home-section__desc">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
