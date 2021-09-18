@@ -19,7 +19,7 @@
 @import "./components/team-member";
 @import "./components/card-v2";
 @import "./components/article-card";
-@import "./components/tech-stack-card";
+@import "./components/card-v3";
 
 @import "./layout/header";
 @import "./layout/footer";
@@ -44,5 +44,7 @@
 @import "./layout/service-type-section";
 @import "./layout/tech-stack-section";
 @import "./layout/projects-section";
+@import "./layout/benefits-section";
+@import "./layout/career-section";
 
 @import "./vendors/slick-overriden";

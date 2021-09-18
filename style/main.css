@@ -776,7 +776,7 @@ a {
   border: none;
 }
 
-.tech-stack-card {
+.card-v3 {
   text-align: center;
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -1315,6 +1315,45 @@ a {
   row-gap: 24px;
   -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.benefits-section {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.benefits-section > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 140px;
+          flex: 0 0 140px;
+  margin: 8px;
+}
+
+.career-section {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+  row-gap: 24px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  text-align: center;
 }
 
 .slick-slide {

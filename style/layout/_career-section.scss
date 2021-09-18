@@ -1,0 +1,12 @@
+@import "../abstracts/variables";
+
+.career-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  row-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  text-align: center;
+}
