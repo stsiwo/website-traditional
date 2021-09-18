@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stsDev - Web & Mobile IT Company</title>
+    <!-- normalizer -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- js slick -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- material design icons-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <a href="/" class="logo-box header__logo-box">
+        <img src="./assets/logo.svg" alt="stsDev Logo Image" />
+        <h2 class="logo-box__title">stsDev</h2>
+      </a>
+      <div id="header-nav-icon" class="nav-icon header__nav-icon">
+        <img src="./assets/menu.svg" alt="Header Nav Menu Icon" />
+      </div>
+      <nav id="header-nav" class="nav header__nav">
+        <div id="header-close-icon" class="close-icon header__close-icon">
+          <img src="./assets/close.svg" alt="Header Nav Menu Close Icon" />
+        </div>
+        <ul>
+          <li id="services-nav-item" class="nav__item">
+            <a href="" class="link nav__link">Services</a>
+            <ul
+              id="services-sub-nav-item"
+              class="nav__sub-nav nav__sub-nav_hidden"
+            >
+              <li class="nav__sub-item">
+                <a href="/service.html" class="link nav__link"
+                  >Web Development</a
+                >
+              </li>
+              <li class="nav__sub-item">
+                <a href="" class="link nav__link">Mobile Development</a>
+              </li>
+              <li class="nav__sub-item">
+                <a href="" class="link nav__link">Software Consulting</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="" class="link nav__link">About Us</a>
+          </li>
+          <li id="careers-nav-item" class="nav__item">
+            <a href="" class="link nav__link">Careers</a>
+            <ul
+              id="careers-sub-nav-item"
+              class="nav__sub-nav nav__sub-nav_hidden"
+            >
+              <li class="nav__sub-item">
+                <a href="" class="link nav__link">Web Designer</a>
+              </li>
+              <li class="nav__sub-item">
+                <a href="" class="link nav__link">Full Stack Web Developer</a>
+              </li>
+              <li class="nav__sub-item">
+                <a href="" class="link nav__link">Android Developer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="" class="link nav__link">Contact Us</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="link nav__link">Articles</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="link nav__link">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="home-section">
+      <h2 class="home-section__title">Web Development Service</h2>
+      <p class="home-section__desc">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+
+    <!-- what we develop - type of web development such as cloud-based applications, saas application, enterprise applications, progressive web app, single-page apps -->
+    <div class="service-type-section">
+      <div class="service-type-section__left-content">
+        <p class="service-type-section__desc">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <ul class="gen-list">
+          <li class="gen-list">
+            <span class="material-icons gen-list__icon"> lightbulb </span>
+            Cloud-based Applications
+          </li>
+          <li class="gen-list">
+            <span class="material-icons gen-list__icon"> lightbulb </span>
+            Saas Applications
+          </li>
+          <li class="gen-list">
+            <span class="material-icons gen-list__icon"> lightbulb </span>
+            Progressive Applications
+          </li>
+          <li class="gen-list">
+            <span class="material-icons gen-list__icon"> lightbulb </span>
+            Single-Page applications
+          </li>
+        </ul>
+        <button class="button service-type-section__button">
+          Get Estimate
+        </button>
+      </div>
+      <div class="img-container-1-1 service-type-section__right-content">
+        <div class="img-container-1-1__overlay"></div>
+        <img
+          src="./assets/web-1.jpg"
+          alt=""
+          class="img-container-1-1__img service-type-section__img"
+        />
+      </div>
+    </div>
+
+    <!-- out tech stack -->
+    <div class="home-section">
+      <h2 class="home-section__title">Tech Stack</h2>
+      <p class="home-section__desc">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+    <div class="tech-stack-section">
+      <div class="tech-stack-card">
+        <div class="tech-stack-card__icon-box">
+          <img src="./assets/react.svg" alt="" />
+        </div>
+        <hr style="width: 50%" class="tech-stack-card__hr" />
+        <p class="tech-stack-card__title">React.js</p>
+      </div>
+      <div class="tech-stack-card">
+        <div class="tech-stack-card__icon-box">
+          <img src="./assets/angular.svg" alt="" />
+        </div>
+        <hr style="width: 50%" class="tech-stack-card__hr" />
+        <p class="tech-stack-card__title">Angular</p>
+      </div>
+      <div class="tech-stack-card">
+        <div class="tech-stack-card__icon-box">
+          <img src="./assets/php.svg" alt="" />
+        </div>
+        <hr style="width: 50%" class="tech-stack-card__hr" />
+        <p class="tech-stack-card__title">PHP</p>
+      </div>
+      <div class="tech-stack-card">
+        <div class="tech-stack-card__icon-box">
+          <img src="./assets/java.svg" alt="" />
+        </div>
+        <hr style="width: 50%" class="tech-stack-card__hr" />
+        <p class="tech-stack-card__title">Java</p>
+      </div>
+      <div class="tech-stack-card">
+        <div class="tech-stack-card__icon-box">
+          <img src="./assets/js.svg" alt="" />
+        </div>
+        <hr style="width: 50%" class="tech-stack-card__hr" />
+        <p class="tech-stack-card__title">JS</p>
+      </div>
+      <div class="tech-stack-card">
+        <div class="tech-stack-card__icon-box">
+          <img src="./assets/python.svg" alt="" />
+        </div>
+        <hr style="width: 50%" class="tech-stack-card__hr" />
+        <p class="tech-stack-card__title">Python</p>
+      </div>
+    </div>
+
+    <!-- project -->
+    <div class="home-section">
+      <h2 class="home-section__title">Projects</h2>
+      <p class="home-section__desc">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+
+    <div class="projects-section">
+      <p class="projects-section__desc"></p>
+      <div class="project-list projects-section__project-list">
+        <div class="card-v2 aspect-16-9-wrapper">
+          <div class="img-container-16-9 card-v2__img">
+            <img
+              src="./assets/web.jpg"
+              alt=""
+              class="
+                img-container-16-9__img
+                projects-carousel-section__content-img
+              "
+            />
+          </div>
+          <div class="img-gradient card-v2__img-gradient"></div>
+          <div class="card-v2__overlay">
+            <h3 class="card-v2__title">Full Stack Web Developer</h3>
+            <hr style="width: 50%" class="card-v2__hr" />
+            <div class="card-v2__desc-box card-v2__desc-box-hidden">
+              <p class="card-v2__desc">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+            <!--
+            <div class="card-v2__control">
+              <button class="button-v2 card-v2__button-v2">Learn More</button>
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="card-v2 aspect-16-9-wrapper">
+          <div class="img-container-16-9 card-v2__img">
+            <img
+              src="./assets/web.jpg"
+              alt=""
+              class="
+                img-container-16-9__img
+                projects-carousel-section__content-img
+              "
+            />
+          </div>
+          <div class="img-gradient card-v2__img-gradient"></div>
+          <div class="card-v2__overlay">
+            <h3 class="card-v2__title">Full Stack Web Developer</h3>
+            <hr style="width: 50%" class="card-v2__hr" />
+            <div class="card-v2__desc-box card-v2__desc-box-hidden">
+              <p class="card-v2__desc">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+            <!--
+            <div class="card-v2__control">
+              <button class="button-v2 card-v2__button-v2">Learn More</button>
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="card-v2 aspect-16-9-wrapper">
+          <div class="img-container-16-9 card-v2__img">
+            <img
+              src="./assets/web.jpg"
+              alt=""
+              class="
+                img-container-16-9__img
+                projects-carousel-section__content-img
+              "
+            />
+          </div>
+          <div class="img-gradient card-v2__img-gradient"></div>
+          <div class="card-v2__overlay">
+            <h3 class="card-v2__title">Full Stack Web Developer</h3>
+            <hr style="width: 50%" class="card-v2__hr" />
+            <div class="card-v2__desc-box card-v2__desc-box-hidden">
+              <p class="card-v2__desc">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+            <!--
+            <div class="card-v2__control">
+              <button class="button-v2 card-v2__button-v2">Learn More</button>
+            </div>
+            -->
+          </div>
+        </div>
+        <div class="card-v2 aspect-16-9-wrapper">
+          <div class="img-container-16-9 card-v2__img">
+            <img
+              src="./assets/web.jpg"
+              alt=""
+              class="
+                img-container-16-9__img
+                projects-carousel-section__content-img
+              "
+            />
+          </div>
+          <div class="img-gradient card-v2__img-gradient"></div>
+          <div class="card-v2__overlay">
+            <h3 class="card-v2__title">Full Stack Web Developer</h3>
+            <hr style="width: 50%" class="card-v2__hr" />
+            <div class="card-v2__desc-box card-v2__desc-box-hidden">
+              <p class="card-v2__desc">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+            <!--
+            <div class="card-v2__control">
+              <button class="button-v2 card-v2__button-v2">Learn More</button>
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-section">
+      <h2 class="home-section__title">Contact Us</h2>
+      <p class="home-section__desc">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+
+    <div class="to-contact-section">
+      <div class="to-contact-section__left-content">
+        <div class="img-container-1-166">
+          <img
+            class="img-container-1-166__img"
+            src="./assets/sample-contact-us-vertical-image.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="to-contact-section__right-content">
+        <h3 class="to-contact-section__title">
+          Our goal is to provide efficiency and quality on time projects
+        </h3>
+        <p class="to-contact-section__desc">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <button class="button to-contact-section__button">
+          Contact Us Now
+        </button>
+      </div>
+    </div>
+
+    <div class="home-section">
+      <h2 class="home-section__title">To Article Section</h2>
+      <p class="home-section__desc">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+    </div>
+
+    <div class="to-article-section">
+      <p class="to-article-section__desc">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+
+      <div class="to-article-secstion__slick">
+        <div>
+          <div class="article">
+            <img
+              class="article__image"
+              src="./assets/sample-business.jpg"
+              alt="Article Thumbnail Image"
+            />
+            <h3 class="article__title">Title Here</h3>
+            <p class="article__date">September, 19th 2021</p>
+            <p class="article__desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button class="button-v2 article__button-v2">Read More</button>
+          </div>
+        </div>
+        <div>
+          <div class="article">
+            <img
+              class="article__image"
+              src="./assets/sample-business.jpg"
+              alt="Article Thumbnail Image"
+            />
+            <h3 class="article__title">Title Here</h3>
+            <p class="article__date">September, 19th 2021</p>
+            <p class="article__desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button class="button-v2 article__button-v2">Read More</button>
+          </div>
+        </div>
+        <div>
+          <div class="article">
+            <img
+              class="article__image"
+              src="./assets/sample-business.jpg"
+              alt="Article Thumbnail Image"
+            />
+            <h3 class="article__title">Title Here</h3>
+            <p class="article__date">September, 19th 2021</p>
+            <p class="article__desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button class="button-v2 article__button-v2">Read More</button>
+          </div>
+        </div>
+        <div>
+          <div class="article">
+            <img
+              class="article__image"
+              src="./assets/sample-business.jpg"
+              alt="Article Thumbnail Image"
+            />
+            <h3 class="article__title">Title Here</h3>
+            <p class="article__date">September, 19th 2021</p>
+            <p class="article__desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <button class="button-v2 article__button-v2">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer__top">
+        <div class="company footer__company">
+          <div class="logo-box logo-box__company">
+            <img src="./assets/logo.svg" alt="stsDev Logo Image" />
+            <h2 class="logo-box__title">stsDev</h2>
+          </div>
+          <p class="company__desc">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <div class="company__contact">
+            <p class="contact__address-1">3117 Weston Rd</p>
+            <p class="contact__address-2">Toronto, ON M9N 1G4</p>
+            <p class="contact__phone">416-241-2767</p>
+          </div>
+          <div class="company__sns-box">
+            <img
+              class="link sns-box__link"
+              src="./assets/facebook.svg"
+              alt=""
+            />
+            <img
+              class="link sns-box__link"
+              src="./assets/instagram.svg"
+              alt=""
+            />
+            <img class="link sns-box__link" src="./assets/twitter.svg" alt="" />
+            <img class="link sns-box__link" src="./assets/contact.svg" alt="" />
+          </div>
+        </div>
+        <div class="links footer__links">
+          <h2 class="links__title">Links</h2>
+          <ul class="links__link-box">
+            <li><a class="footer__link links__link" href="">Services</a></li>
+            <li><a class="footer__link links__link" href="">About Us</a></li>
+            <li><a class="footer__link links__link" href="">Careers</a></li>
+            <li><a class="footer__link links__link" href="">Contact Us</a></li>
+            <li><a class="footer__link links__link" href="">Articles</a></li>
+            <li><a class="footer__link links__link" href="">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="subscription footer__subscription">
+          <h2 class="subscription__title">Newsletters & Articles</h2>
+          <p class="subscription__desc">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <button class="button button__subscription">Subscribe Now</button>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="policies footer__policies">
+          <div class="policy-box policies__policy-box">
+            <a class="footer__link policy-box__link" href="">Privacy Policy</a>
+            <span> - </span>
+            <a class="footer__link policy-box__link" href="">Cookie Policy</a>
+            <span> - </span>
+            <a class="footer__link policy-box__link" href=""
+              >Terms and Conditions</a
+            >
+          </div>
+          <p class="copyright policies__copyright">
+            All Right Reserved by @stsDev 2021
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- js slick: must be after jQuery -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

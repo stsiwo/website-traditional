@@ -303,14 +303,14 @@ $(document).ready(function () {
   /**
    * slidetoggle at career-card desc when hover
    */
-  $(".career-card").on("mouseenter", function () {
-    const targetDescEl = $(this).find(".career-card__desc-box");
-    //targetDescEl.removeClass("career-card__desc-box-hidden");
+  $(".card-v2").on("mouseenter", function () {
+    const targetDescEl = $(this).find(".card-v2__desc-box");
+    //targetDescEl.removeClass("card-v2__desc-box-hidden");
     targetDescEl.slideToggle();
   });
-  $(".career-card").on("mouseleave", function () {
-    const targetDescEl = $(this).find(".career-card__desc-box");
-    //targetDescEl.addClass("career-card__desc-box-hidden");
+  $(".card-v2").on("mouseleave", function () {
+    const targetDescEl = $(this).find(".card-v2__desc-box");
+    //targetDescEl.addClass("card-v2__desc-box-hidden");
     targetDescEl.slideToggle();
   });
 });

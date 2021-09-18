@@ -1,0 +1,13 @@
+@import "../abstracts/variables";
+
+.tech-stack-card {
+  text-align: center;
+  box-shadow: $box-shadow;
+  border-radius: 5px;
+  padding: 16px 0;
+
+  background-color: $color-accent;
+
+  &__hr {
+  }
+}

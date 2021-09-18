@@ -1,0 +1,15 @@
+@import "../abstracts/variables";
+
+.tech-stack-section {
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  & > * {
+    flex: 0 0 140px;
+    margin: 8px;
+  }
+}

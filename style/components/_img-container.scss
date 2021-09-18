@@ -1,5 +1,12 @@
 @import "../abstracts/variables";
 
+// note:
+// don't wrap this element with anotehr div element
+// e.g.,
+// main div -> left-content
+//          -> right-content
+//              -> img-container : don't do this you don't need to wrap with right-content
+
 .img-container-239-1 {
   // aspect ratio: 2.39: 1: 100% : 41.84
   position: relative;
@@ -148,5 +155,31 @@
     right: 0;
     width: 100%;
     height: 100%;
+  }
+}
+
+.img-container-1-1 {
+  // aspect ratio: 9: 16: 100% : 178%
+
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  margin: 0 auto; // you can use this to align center and don't need to modify below.
+
+  & > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__overlay {
+    background-color: $color-accent;
+    top: 10px;
+    left: -10px;
+    box-shadow: $box-shadow;
   }
 }

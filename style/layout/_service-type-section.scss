@@ -1,0 +1,28 @@
+@import "../abstracts/variables";
+
+.service-type-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  row-gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  &__left-content {
+    text-align: center;
+  }
+
+  &__right-content {
+    // override img-container-1-1 since it was too big if 100%
+    width: 80%;
+    padding-top: 80%;
+  }
+
+  &__button {
+    margin: 16px 0;
+  }
+
+  &__img {
+    box-shadow: $box-shadow;
+  }
+}
