@@ -51,6 +51,9 @@
       width: 100%;
       padding: 8px;
       border: none;
+
+      border-bottom: 1px solid grey;
+      background-color: transparent;
     }
 
     // since there is no way to manipulate the 'after' pseudo when the input focused
