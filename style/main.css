@@ -899,7 +899,37 @@ a {
 }
 
 .footer__link {
+  display: inline-block;
   color: #fff;
+  -webkit-transition: color ease 0.5s;
+  transition: color ease 0.5s;
+}
+
+.footer__link:hover {
+  color: #ff6500;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.footer__link::after {
+  display: block;
+  content: " ";
+  border-bottom: solid 2px #ff6500;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.footer__link:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 
 .bg {

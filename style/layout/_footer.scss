@@ -26,6 +26,9 @@
   }
 
   &__link {
+    display: inline-block;
     color: #fff;
+    @include color-change-hover($color-accent);
+    @include border-bottom-ani();
   }
 }
