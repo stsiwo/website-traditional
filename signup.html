@@ -48,25 +48,31 @@
           <img src="./assets/close.svg" alt="Header Nav Menu Close Icon" />
         </div>
         <ul>
-          <li id="services-nav-item" class="nav__item">
+          <li class="nav__item">
             <a href="/services.html" class="link nav__link">Services</a>
-            <ul
-              id="services-sub-nav-item"
-              class="nav__sub-nav nav__sub-nav_hidden"
-            >
+            <ul class="nav__sub-nav">
               <li class="nav__sub-item">
-                <a href="/service.html" class="link nav__link"
-                  >Web Development</a
+                <a href="/service.html" class="link nav__link">
+                  <span class="material-icons nav__sub-icon">
+                    arrow_forward
+                  </span>
+                  <span class="nav__sub-title">Web Development</span></a
                 >
               </li>
               <li class="nav__sub-item">
-                <a href="/service.html" class="link nav__link"
-                  >Mobile Development</a
+                <a href="/service.html" class="link nav__link">
+                  <span class="material-icons nav__sub-icon">
+                    arrow_forward
+                  </span>
+                  <span class="nav__sub-title">Mobile Development</span></a
                 >
               </li>
               <li class="nav__sub-item">
-                <a href="/service.html" class="link nav__link"
-                  >Software Consulting</a
+                <a href="/service.html" class="link nav__link">
+                  <span class="material-icons nav__sub-icon">
+                    arrow_forward
+                  </span>
+                  <span class="nav__sub-title">Software Consulting</span></a
                 >
               </li>
             </ul>
@@ -76,22 +82,30 @@
           </li>
           <li id="careers-nav-item" class="nav__item">
             <a href="/careers.html" class="link nav__link">Careers</a>
-            <ul
-              id="careers-sub-nav-item"
-              class="nav__sub-nav nav__sub-nav_hidden"
-            >
+            <ul id="careers-sub-nav-item" class="nav__sub-nav">
               <li class="nav__sub-item">
-                <a href="/career.html" class="link nav__link">Web Designer</a>
+                <a href="/career.html" class="link nav__link">
+                  <span class="material-icons nav__sub-icon">
+                    arrow_forward
+                  </span>
+                  <span class="nav__sub-title">Web Designer</span>
+                </a>
               </li>
               <li class="nav__sub-item">
                 <a href="/career.html" class="link nav__link"
-                  >Full Stack Web Developer</a
-                >
+                  >
+                  <span class="material-icons nav__sub-icon">
+                    arrow_forward
+                  </span>
+                  <span class="nav__sub-title">Full Stack Web Developer</span>
               </li>
               <li class="nav__sub-item">
-                <a href="/career.html" class="link nav__link"
-                  >Android Developer</a
-                >
+                <a href="/career.html" class="link nav__link">
+                  <span class="material-icons nav__sub-icon">
+                    arrow_forward
+                  </span>
+                  <span class="nav__sub-title">Android Developer</span>
+                  </a>
               </li>
             </ul>
           </li>
@@ -107,6 +121,7 @@
         </ul>
       </nav>
     </header>
+    <!-- header-end -->
     <div class="bg"></div>
 
     <div class="signup-section">
@@ -193,18 +208,42 @@
           </div>
         </div>
         <div class="links footer__links">
-          <h2 class="links__title">Links</h2>
+          <h3 class="links__title">Links</h3>
           <ul class="links__link-box">
-            <li><a class="footer__link links__link" href="">Services</a></li>
-            <li><a class="footer__link links__link" href="">About Us</a></li>
-            <li><a class="footer__link links__link" href="">Careers</a></li>
-            <li><a class="footer__link links__link" href="">Contact Us</a></li>
-            <li><a class="footer__link links__link" href="">Articles</a></li>
-            <li><a class="footer__link links__link" href="">Sign Up</a></li>
+            <li>
+              <a class="footer__link links__link" href="/services.html"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a class="footer__link links__link" href="/about-us.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a class="footer__link links__link" href="/careers.html"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a class="footer__link links__link" href="/contact-us.html"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a class="footer__link links__link" href="/articles.html"
+                >Articles</a
+              >
+            </li>
+            <li>
+              <a class="footer__link links__link" href="/signup.html"
+                >Sign Up</a
+              >
+            </li>
           </ul>
         </div>
         <div class="subscription footer__subscription">
-          <h2 class="subscription__title">Newsletters & Articles</h2>
+          <h3 class="subscription__title">Newsletters & Articles</h3>
           <p class="subscription__desc">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation

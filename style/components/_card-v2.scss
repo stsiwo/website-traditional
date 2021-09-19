@@ -32,6 +32,11 @@
     }
   }
 
+  &__desc {
+    // prevent overflow
+    @include clamp(2);
+  }
+
   &__img-gradient {
     background: rgba(255, 255, 255, 0)
       linear-gradient(

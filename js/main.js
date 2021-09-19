@@ -260,32 +260,19 @@ $(document).ready(function () {
    */
 
   // services
-  $("#services-nav-item").on("mouseenter", function () {
+  $(".nav__item").on("mouseenter", function () {
     let currentScreenWidth = $(window).width();
     if (currentScreenWidth > sizeLaptop) {
-      $("#services-sub-nav-item").slideToggle();
+      const subItemEl = $(this).find(".nav__sub-nav");
+      subItemEl.fadeIn();
     }
   });
 
-  $("#services-nav-item").on("mouseleave", function () {
+  $(".nav__item").on("mouseleave", function () {
     let currentScreenWidth = $(window).width();
     if (currentScreenWidth > sizeLaptop) {
-      $("#services-sub-nav-item").slideToggle();
-    }
-  });
-
-  // careers
-  $("#careers-nav-item").on("mouseenter", function () {
-    let currentScreenWidth = $(window).width();
-    if (currentScreenWidth > sizeLaptop) {
-      $("#careers-sub-nav-item").slideToggle();
-    }
-  });
-
-  $("#careers-nav-item").on("mouseleave", function () {
-    let currentScreenWidth = $(window).width();
-    if (currentScreenWidth > sizeLaptop) {
-      $("#careers-sub-nav-item").slideToggle();
+      const subItemEl = $(this).find(".nav__sub-nav");
+      subItemEl.fadeOut();
     }
   });
 
