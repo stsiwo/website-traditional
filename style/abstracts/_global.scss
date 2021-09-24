@@ -37,6 +37,9 @@ body {
   height: 100%;
   width: 100%;
 
+  max-width: 2000px;
+  margin: 0 auto;
+
   // header aument
   position: relative;
   top: $header-height;
@@ -61,4 +64,27 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.icon-link {
+  display: inline-block;
+  color: #fff;
+  @include color-change-hover($color-accent);
+}
+
+.icon {
+  font-size: $font-size-icon;
+}
+
+.gap {
+  margin: 80px 0;
+}
+
+.small-gap {
+  margin: 40px 0;
+}
+
+.link {
+  color: $color-accent;
+  font-weight: bold;
 }

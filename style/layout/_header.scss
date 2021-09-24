@@ -32,4 +32,10 @@
       display: none;
     }
   }
+
+  // need this to animate when scroll up
+  transition: top 0.2s ease-in-out;
+  &__nav-up {
+    top: -$header-height;
+  }
 }

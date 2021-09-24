@@ -1,0 +1,11 @@
+@import "../abstracts/variables";
+
+.section {
+  &__title {
+    text-align: center;
+  }
+
+  &__desc {
+    text-align: center;
+  }
+}

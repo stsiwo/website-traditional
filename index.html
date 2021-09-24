@@ -31,6 +31,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!-- font awesome icons-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
@@ -148,71 +153,65 @@
       <div class="hero__right-content"></div>
     </div>
 
-    <div class="home-section">
-      <h2 class="home-section__title">Our Innovative Services</h2>
-      <p class="home-section__desc">
+    <div class="gap"></div>
+
+    <div class="section">
+      <h2 class="section__title">Our Innovative Services</h2>
+      <p class="section__desc">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
+      <div class="card-box">
+        <div class="card">
+          <h3 class="card__title">Web Development</h3>
+          <div class="card__icon">
+            <img
+              src="./assets/web-dev-service-circle.svg"
+              alt="Web Development Service Image"
+            />
+          </div>
+          <p class="card__desc">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <button class="button button__card">More Detail</button>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Web Development</h3>
+          <div class="card__icon">
+            <img
+              src="./assets/web-dev-service-circle.svg"
+              alt="Web Development Service Image"
+            />
+          </div>
+          <p class="card__desc">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <button class="button button__card">More Detail</button>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Web Development</h3>
+          <div class="card__icon">
+            <img
+              src="./assets/web-dev-service-circle.svg"
+              alt="Web Development Service Image"
+            />
+          </div>
+          <p class="card__desc">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <button class="button button__card">More Detail</button>
+        </div>
+      </div>
     </div>
 
-    <div class="card-box">
-      <div class="card">
-        <h3 class="card__title">Web Development</h3>
-        <div class="card__icon">
-          <img
-            src="./assets/web-dev-service-circle.svg"
-            alt="Web Development Service Image"
-          />
-        </div>
-        <p class="card__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <button class="button button__card">More Detail</button>
-      </div>
-      <div class="card">
-        <h3 class="card__title">Web Development</h3>
-        <div class="card__icon">
-          <img
-            src="./assets/web-dev-service-circle.svg"
-            alt="Web Development Service Image"
-          />
-        </div>
-        <p class="card__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <button class="button button__card">More Detail</button>
-      </div>
-      <div class="card">
-        <h3 class="card__title">Web Development</h3>
-        <div class="card__icon">
-          <img
-            src="./assets/web-dev-service-circle.svg"
-            alt="Web Development Service Image"
-          />
-        </div>
-        <p class="card__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <button class="button button__card">More Detail</button>
-      </div>
-    </div>
-
-    <div class="home-section">
-      <h2 class="home-section__title">We Are</h2>
-      <p class="home-section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-    </div>
+    <div class="gap"></div>
 
     <div class="image-text">
       <div class="image-text__left-content">
@@ -235,16 +234,10 @@
       </div>
     </div>
 
-    <div class="home-section">
-      <h2 class="home-section__title">Read Articles</h2>
-      <p class="home-section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-    </div>
+    <div class="gap"></div>
 
     <div class="to-article-section">
+      <h2 class="to-article-section__title">Read Articles</h2>
       <p class="to-article-section__desc">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
@@ -341,18 +334,18 @@
             <p class="contact__phone">416-241-2767</p>
           </div>
           <div class="company__sns-box">
-            <img
-              class="link sns-box__link"
-              src="./assets/facebook.svg"
-              alt=""
-            />
-            <img
-              class="link sns-box__link"
-              src="./assets/instagram.svg"
-              alt=""
-            />
-            <img class="link sns-box__link" src="./assets/twitter.svg" alt="" />
-            <img class="link sns-box__link" src="./assets/contact.svg" alt="" />
+            <a class="link sns-box__link icon-link" href="" target="_blank">
+              <i class="fab fa-facebook icon"></i>
+            </a>
+            <a class="link sns-box__link icon-link" href=""  target="_blank">
+              <i class="fab fa-instagram icon"></i>
+            </a>
+            <a class="link sns-box__link icon-link" href=""  target="_blank">
+              <i class="fab fa-twitter icon"></i>
+            </a>
+            <a class="link sns-box__link icon-link" href=""  target="_blank">
+              <i class="fas fa-at icon"></i>
+            </a>
           </div>
         </div>
         <div class="links footer__links">

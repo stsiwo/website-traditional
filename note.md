@@ -154,6 +154,12 @@ you can override the following:
 }
 ```
 
+### (issue-grid-with-no-media-query)
+
+better to use media query since it is cimplicated.
+
+ref: https://stackoverflow.com/questions/55281598/css-grid-maximum-number-of-columns-without-media-queries
+
 ## Slick library
 
 ### usage

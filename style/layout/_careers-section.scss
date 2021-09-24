@@ -1,16 +1,24 @@
 @import "../abstracts/variables";
 
 .careers-section {
-  margin: 160px 0;
+  &__desc {
+    text-align: center;
+  }
+
   &__career-list {
-    padding: 0 16px;
     display: grid;
     align-items: center;
-    column-gap: 16px;
+    column-gap: 8px;
     row-gap: 24px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-    & > * {
+    // issue-grid-with-no-media-query
+    @media screen and (max-width: $size-laptop - 1 + "px") {
+      grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+
+    @media screen and (min-width: $size-laptop + "px") {
+      padding: 0 16px;
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
     }
   }
 }

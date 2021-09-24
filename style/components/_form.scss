@@ -23,7 +23,8 @@
   &__text-input {
     width: 100%;
     text-align: center;
-    margin: 16px 0;
+    margin: 16px auto;
+    max-width: 300px;
 
     position: relative;
     &::after {

@@ -1,6 +1,10 @@
 @import "../abstracts/variables";
 
 .carousel-section {
+  &__desc {
+    text-align: center;
+  }
+
   &__content {
     position: relative;
   }

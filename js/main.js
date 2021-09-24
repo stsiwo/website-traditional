@@ -309,4 +309,50 @@ $(document).ready(function () {
     //targetDescEl.addClass("card-v2__desc-box-hidden");
     targetDescEl.slideToggle();
   });
+
+  /**
+   * header animation
+   * ref: https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c
+   */
+  // Hide Header on on scroll down
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $("header").outerHeight();
+
+  $(window).on("scroll", function (event) {
+    didScroll = true;
+  });
+
+  setInterval(function () {
+    if (didScroll) {
+      hasScrolled();
+      didScroll = false;
+    }
+  }, 250);
+
+  function hasScrolled() {
+    console.log("called hasScrolled");
+    var st = $(this).scrollTop();
+
+    // Make sure they scroll more than delta
+    if (Math.abs(lastScrollTop - st) <= delta) return;
+    console.log("math.abs");
+
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight) {
+      console.log("scroll down");
+      // Scroll Down
+      $("header").addClass("header__nav-up");
+    } else {
+      // Scroll Up
+      if (st + $(window).height() < $(document).height()) {
+        console.log("scroll up");
+        $("header").removeClass("header__nav-up");
+      }
+    }
+
+    lastScrollTop = st;
+  }
 });
