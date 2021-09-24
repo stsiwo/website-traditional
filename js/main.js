@@ -300,14 +300,20 @@ $(document).ready(function () {
    * slidetoggle at career-card desc when hover
    */
   $(".card-v2").on("mouseenter", function () {
-    const targetDescEl = $(this).find(".card-v2__desc-box");
-    //targetDescEl.removeClass("card-v2__desc-box-hidden");
-    targetDescEl.slideToggle();
+    let currentScreenWidth = $(window).width();
+    if (currentScreenWidth > sizeTablet) {
+      const targetDescEl = $(this).find(".card-v2__desc-box");
+      //targetDescEl.removeClass("card-v2__desc-box-hidden");
+      targetDescEl.slideToggle();
+    }
   });
   $(".card-v2").on("mouseleave", function () {
-    const targetDescEl = $(this).find(".card-v2__desc-box");
-    //targetDescEl.addClass("card-v2__desc-box-hidden");
-    targetDescEl.slideToggle();
+    let currentScreenWidth = $(window).width();
+    if (currentScreenWidth > sizeTablet) {
+      const targetDescEl = $(this).find(".card-v2__desc-box");
+      //targetDescEl.addClass("card-v2__desc-box-hidden");
+      targetDescEl.slideToggle();
+    }
   });
 
   /**

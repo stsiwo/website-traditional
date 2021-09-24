@@ -94,6 +94,12 @@ a {
   font-weight: bold;
 }
 
+.black-link {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 769px) {
   .nav-icon {
     display: none;
@@ -222,6 +228,19 @@ a {
 .button:active {
   -webkit-box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.25);
           box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-small {
+  background-color: #ff6500;
+  border: none;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  padding: 4px 16px;
+  border-radius: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .button-v2 {
@@ -638,7 +657,7 @@ a {
 
 .form__control {
   text-align: center;
-  margin-top: 40px;
+  margin: 40px 0;
 }
 
 .gen-list__item {
@@ -967,6 +986,10 @@ a {
   padding: 80px 8px 8px 8px;
   margin-left: -8px;
   margin-right: -8px;
+}
+
+.footer__logo-title {
+  color: #fff;
 }
 
 .footer__top {
@@ -1591,6 +1614,14 @@ a {
   width: 40%;
   max-width: 700px;
   margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.signup-section__hr {
+  background-color: #ff6500;
+  height: 1px;
+  border: none;
+  height: 2px;
 }
 
 .slick-slide {

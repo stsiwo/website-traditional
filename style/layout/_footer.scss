@@ -8,6 +8,10 @@
   margin-left: -$bodyPaddingWidth;
   margin-right: -$bodyPaddingWidth;
 
+  &__logo-title {
+    color: #fff;
+  }
+
   &__top {
     display: flex;
     justify-content: space-around;

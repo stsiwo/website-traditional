@@ -14,3 +14,15 @@
 .button:active {
   box-shadow: $box-shadow-pushed;
 }
+
+.button-small {
+  background-color: $color-accent;
+  border: none;
+  box-shadow: $box-shadow;
+  padding: 4px 16px;
+  border-radius: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: $font-size-small;
+}
