@@ -17,6 +17,8 @@
   row-gap: 24px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
+  color: #fff;
+
   &__left-content {
     //flex: 1 0 45%;
     min-width: 300px;

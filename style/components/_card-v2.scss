@@ -32,9 +32,14 @@
     }
   }
 
+  &__title {
+    color: #000;
+  }
+
   &__desc {
     // prevent overflow
     @include clamp(2);
+    color: #000;
   }
 
   &__img-gradient {

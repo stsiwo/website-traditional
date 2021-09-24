@@ -14,6 +14,7 @@
 
   &__title {
     @include ellipsis;
+    color: #000;
   }
 
   &__date {
@@ -23,10 +24,6 @@
 
   &__desc {
     @include clamp(4);
-  }
-
-  &__button-v2 {
-    // align right
-    float: right;
+    color: #000;
   }
 }

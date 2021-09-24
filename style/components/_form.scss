@@ -69,9 +69,14 @@
       transform: scaleX(1);
       transform-origin: 50% 50%;
     }
+
+    &__full-width {
+      max-width: initial;
+    }
   }
 
   &__control {
     text-align: center;
+    margin-top: 40px;
   }
 }

@@ -15,6 +15,14 @@
 
   position: relative;
 
+  &__title {
+    color: #000;
+  }
+
+  &__hr {
+    @include hr;
+  }
+
   &__icon {
     position: relative;
     transform: translate(0, -50%);

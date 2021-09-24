@@ -46,6 +46,13 @@
     box-shadow: $box-shadow;
     border-radius: 3px;
   }
+
+  &__overlay {
+    background-color: $color-accent;
+    transform: translate(-53%, -48%);
+    background-color: $color-accent;
+    box-shadow: $box-shadow;
+  }
 }
 
 .img-container-21-9 {

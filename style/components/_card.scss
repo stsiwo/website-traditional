@@ -6,4 +6,22 @@
   width: 300px;
   text-align: center;
   display: inline-block; // to disable margin collapse of 1st and last child
+
+  &__title {
+    color: #000;
+  }
+
+  &__hr {
+    background-color: $color-accent;
+    height: 1px;
+    border: none;
+  }
+
+  &__desc {
+    @include helper-text;
+  }
+
+  &__icon {
+    margin: 24px 0;
+  }
 }
