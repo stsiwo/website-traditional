@@ -4,75 +4,21 @@
 var sizeTablet = 426;
 var sizeLaptop = 769;
 
-/**
- * plugin initializations
- */
-// swiperjs (services)
-//const swiper = new Swiper(".swiper", {
-//  slidesPerView: 1,
-//  spaceBetween: 10,
-//  breakpoints: {
-//    425: {
-//      slidesPerView: 1,
-//      spaceBetween: 10,
-//    },
-//    956: {
-//      slidesPerView: 2,
-//      spaceBetween: 10,
-//    },
-//  },
-//  pagination: {
-//    el: ".swiper-pagination",
-//    clickable: true,
-//  },
-//});
-
-/**
- * when add multiple swipers, the second one does not work. esp the width overflow
- */
-
-//const swiper2 = new Swiper(".swiper-2", {
-//  // Optional parameters
-//  // If we need pagination
-//  pagination: {
-//    el: ".swiper-pagination",
-//  },
-//
-//  // Navigation arrows
-//  navigation: {
-//    nextEl: ".swiper-button-next",
-//    prevEl: ".swiper-button-prev",
-//  },
-//
-//  // And if we need scrollbar
-//  scrollbar: {
-//    el: ".swiper-scrollbar",
-//  },
-//});
-//
-//const toArticleSectionSwiper = new Swiper(".to-article-section__swiper", {
-//  slidesPerView: 1,
-//  spaceBetween: 10,
-//  breakpoints: {
-//    425: {
-//      slidesPerView: 1,
-//      spaceBetween: 10,
-//    },
-//    956: {
-//      slidesPerView: 3,
-//      spaceBetween: 10,
-//    },
-//  },
-//  pagination: {
-//    el: ".to-article-section-swiper-pagination",
-//    clickable: true,
-//  },
-//});
-
 $(document).ready(function () {
   /**
    * initializer:
    */
+  /**
+   * aos
+   */
+  AOS.init();
+
+  /**
+   * some cases, aos does not trigger esp when initial loading.
+   */
+  $(window).on("load", function () {
+    AOS.refresh();
+  });
 
   /**
    * service list at service page
@@ -214,46 +160,53 @@ $(document).ready(function () {
   });
 
   /**
-   * reset nav's display: none to display: block when large screen
+   * function lists
    */
-  $(window).on("resize", function () {
-    let currentScreenWidth = $(window).width();
-    let targetNavDisplay = $("#header-nav").css("display");
-    if (currentScreenWidth > sizeLaptop && targetNavDisplay == "none") {
-      $("#header-nav").css("display", "block");
-    }
-
-    if (currentScreenWidth < sizeLaptop && targetNavDisplay == "block") {
-      $("#header-nav").css("display", "none");
-    }
-  });
+  function handlHeaderNavClose(event) {
+    $("#header-nav").animate({
+      left: "100%",
+      boxShadow: "none",
+    });
+  }
 
   /**
-   * fix the height of swiperjs esp when use the swiper element inside another element.
+   * close header nav when user resize / change orientation.
    *
-   * see: https://github.com/nolimits4web/swiper/issues/48
+   * - be careful esp when resize this is run every time resize so this causes wierd behavior. but usual users never resize the screen so leave it as it is.
+   * - if you need to fix this you need to do this: debounce so only run once in a while https://stackoverflow.com/questions/4298612/jquery-how-to-call-resize-event-only-once-its-finished-resizing
    */
-  //$(window).on("resize", function () {
-  //  var height = $(window).height();
-  //  var width = $(window).width();
-  //  $(".swiper-container, .swiper-slide").height(height);
-  //  $(".swiper-container, .swiper-slide").width(width);
-  //});
-  //$(window).trigger("resize");
+  $(window).on("resize orientationchange", handlHeaderNavClose);
+
+  /**
+   * outside click handler close header nav on mobile
+   */
+  $("html").on("click", handlHeaderNavClose);
+  $("#header-nav").on("click", function (event) {
+    event.stopPropagation();
+  });
 
   /**
    * toggle nav bar on mobile/tablet
    */
-  $("#header-nav-icon").on("click", function () {
-    $("#header-nav").slideToggle();
+  $("#header-nav-icon").on("click", function (event) {
+    //$("#header-nav").slideToggle();
+    //$("#header-nav").addClass("nav_active");
+
+    // must match with css
+    const toggleWidth = 150;
+
+    $("#header-nav").animate({
+      left: `-=${toggleWidth}px`,
+      boxShadow: "-1px 0px 5px rgba(0, 0, 0, 0.25)",
+    });
+
+    event.stopPropagation();
   });
 
   /**
    * close nav bar on mobile/tablet
    */
-  $("#header-close-icon").on("click", function () {
-    $("#header-nav").slideUp();
-  });
+  $("#header-close-icon").on("click", handlHeaderNavClose);
 
   /**
    * toggle sub nav on mobile/tablet
@@ -361,4 +314,49 @@ $(document).ready(function () {
 
     lastScrollTop = st;
   }
+
+  /**
+   * background fading out feature
+   */
+
+  function createBgElement() {
+    // check current path
+    const currentPath = window.location.pathname;
+
+    console.log("currnet path: " + currentPath);
+
+    // if index.html
+    if (
+      currentPath == "/" ||
+      currentPath == "" ||
+      currentPath == "/index.html"
+    ) {
+      console.log("you are here");
+      const bgEle = $('<div class="bg"></div>');
+      bgEle.insertAfter($("header"));
+    }
+  }
+
+  function fadingOutBg(event) {
+    const screenHeight = $(window).height();
+    const curScrollTop = $(window).scrollTop();
+    const curScrollPosRatio = curScrollTop / screenHeight;
+
+    console.log("screen height: " + screenHeight);
+    console.log("cur scroll top: " + curScrollTop);
+    console.log("cur scroll pos ratio: " + curScrollPosRatio);
+
+    $(".bg").css({
+      opacity: 1 - curScrollPosRatio,
+    });
+  }
+
+  $(window).on("scroll", fadingOutBg);
+
+  // if current scroll position is is not the top and index.html
+  fadingOutBg();
+
+  // if index.html, create bg element dynamically. this because html always load first and display the bg element and js try to hide this element so
+  // users can see the bg in a instant moment when loading this page.
+  //createBgElement();
 });

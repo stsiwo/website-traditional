@@ -14,29 +14,40 @@
   }
 
   @media screen and (max-width: $size-laptop - 1  + "px") {
-    display: none;
+    //display: none;
+
+    // must match with js when toggle to right
+    width: 150px;
 
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 100%;
     bottom: 0;
     background-color: $color-primary;
+    //transition: all 0.5s ease-in-out;
+
+    //box-shadow: $box-shadow;
 
     & > ul {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       flex-direction: column;
     }
 
     &__item {
-      margin: 8px;
+      margin: 16px 24px;
       border-bottom: 1px solid #fff;
     }
 
     &__link {
       color: #fff;
+    }
+
+    &_active {
+      transition: all 0.5s ease-in-out;
+      left: unset;
+      right: 0;
     }
   }
 

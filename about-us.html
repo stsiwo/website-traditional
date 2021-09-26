@@ -31,6 +31,8 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!-- aos (fadein/out library)-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
@@ -126,18 +128,13 @@
 
     <div class="gap"></div>
 
-    <div class="section">
+    <div class="section" data-aos="fade-up">
       <h2 class="section__title">About Us</h2>
-      <p class="section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
-
+      <hr style="width: 50%;" class="section__hr">
       <div class="small-gap"></div>
     </div>
 
-    <div class="about-us-section">
+    <div class="about-us-section"  data-aos="fade-up">
       <p class="about-us-section__desc">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
@@ -154,7 +151,7 @@
 
     <div class="gap"></div>
 
-    <div class="our-mission-section">
+    <div class="our-mission-section" data-aos="fade-up">
       <h2 class="our-mission-section__title">Our Mission</h2>
       <p class="our-mission-section__desc">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -197,7 +194,7 @@
 
     <div class="gap"></div>
 
-    <div class="our-team-section">
+    <div class="our-team-section" data-aos="fade-up">
       <h2 class="our-team-section__title">Our Team</h2>
       <p class="our-team-section__desc">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -266,7 +263,7 @@
 
     <div class="gap"></div>
 
-    <div class="to-article-section">
+    <div class="to-article-section" data-aos="fade-up" data-aos-anchor-placement="top-center">
       <h2 class="to-article-section__title">Read Articles</h2>
       <p class="to-article-section__desc">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -276,7 +273,7 @@
 
       <div class="to-article-secstion__slick">
         <div>
-          <div class="article">
+          <a href="/article.html" class="article">
             <img
               class="article__image"
               src="./assets/sample-business.jpg"
@@ -289,11 +286,11 @@
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
-            <button class="button-v2 article__button-v2">Read More</button>
-          </div>
+            <button class="button article__button">Read More</button>
+          </a>
         </div>
         <div>
-          <div class="article">
+          <a href="/article.html" class="article">
             <img
               class="article__image"
               src="./assets/sample-business.jpg"
@@ -306,11 +303,11 @@
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
-            <button class="button-v2 article__button-v2">Read More</button>
-          </div>
+            <button class="button article__button">Read More</button>
+          </a>
         </div>
         <div>
-          <div class="article">
+          <a href="/article.html"  class="article">
             <img
               class="article__image"
               src="./assets/sample-business.jpg"
@@ -323,11 +320,11 @@
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
-            <button class="button-v2 article__button-v2">Read More</button>
-          </div>
+            <button class="button article__button">Read More</button>
+          </a>
         </div>
         <div>
-          <div class="article">
+          <a href="/article.html"  class="article">
             <img
               class="article__image"
               src="./assets/sample-business.jpg"
@@ -340,19 +337,18 @@
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
-            <button class="button-v2 article__button-v2">Read More</button>
-          </div>
+            <button class="button article__button">Read More</button>
+          </a>
         </div>
       </div>
     </div>
-
 
     <div class="footer">
       <div class="footer__top">
         <div class="company footer__company">
           <div class="logo-box logo-box__company">
             <img src="./assets/logo.svg" alt="stsDev Logo Image" />
-            <h2 class="logo-box__title">stsDev</h2>
+            <h2 class="logo-box__title footer__logo-title">stsDev</h2>
           </div>
           <p class="company__desc">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -365,18 +361,18 @@
             <p class="contact__phone">416-241-2767</p>
           </div>
           <div class="company__sns-box">
-            <img
-              class="link sns-box__link"
-              src="./assets/facebook.svg"
-              alt=""
-            />
-            <img
-              class="link sns-box__link"
-              src="./assets/instagram.svg"
-              alt=""
-            />
-            <img class="link sns-box__link" src="./assets/twitter.svg" alt="" />
-            <img class="link sns-box__link" src="./assets/contact.svg" alt="" />
+            <a class="link sns-box__link icon-link" href="" target="_blank">
+              <i class="fab fa-facebook icon"></i>
+            </a>
+            <a class="link sns-box__link icon-link" href=""  target="_blank">
+              <i class="fab fa-instagram icon"></i>
+            </a>
+            <a class="link sns-box__link icon-link" href=""  target="_blank">
+              <i class="fab fa-twitter icon"></i>
+            </a>
+            <a class="link sns-box__link icon-link" href=""  target="_blank">
+              <i class="fas fa-at icon"></i>
+            </a>
           </div>
         </div>
         <div class="links footer__links">
@@ -427,13 +423,9 @@
       <div class="footer__bottom">
         <div class="policies footer__policies">
           <div class="policy-box policies__policy-box">
-            <a class="footer__link policy-box__link" href="">Privacy Policy</a>
-            <span> - </span>
-            <a class="footer__link policy-box__link" href="">Cookie Policy</a>
-            <span> - </span>
-            <a class="footer__link policy-box__link" href=""
-              >Terms and Conditions</a
-            >
+            <a class="footer__link policy-box__link" href="">Privacy Policy</a>&nbsp; 
+            <a class="footer__link policy-box__link" href="">Cookie Policy</a>&nbsp; 
+            <a class="footer__link policy-box__link" href="">Terms and Conditions</a>&nbsp; 
           </div>
           <p class="copyright policies__copyright">
             All Right Reserved by @stsDev 2021
@@ -448,11 +440,15 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <!-- jQuery shadow animation extension must be after jQuery-->
+    <script src="//cdn.jsdelivr.net/jquery.shadow-animation/1/mainfile"></script>
     <!-- js slick: must be after jQuery -->
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <!-- aos (fadein/out library)-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

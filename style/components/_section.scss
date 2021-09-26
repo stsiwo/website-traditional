@@ -1,6 +1,11 @@
 @import "../abstracts/variables";
 
 .section {
+  &__hr {
+    @include hr;
+    height: 3px;
+  }
+
   &__title {
     text-align: center;
   }

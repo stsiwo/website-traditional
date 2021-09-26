@@ -1,6 +1,13 @@
 @import "../abstracts/variables";
 
-.gen-list {
+.gen-list-box {
+  text-align: center;
+
+  &__list {
+    display: inline-block;
+    text-align: left;
+  }
+
   &__item {
     // ref-berq4IjPLV2
     margin: 8px 0;

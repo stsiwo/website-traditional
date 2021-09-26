@@ -2,6 +2,7 @@
 
 .hero {
   text-align: center;
+  height: 100vh;
 
   @media screen and (min-width: $size-laptop + "px") {
     display: flex;
@@ -17,10 +18,16 @@
 
   &__left-content {
     // to bring this left-content center vertically.
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
   }
+}
+
+.slogan-box {
+  //box-shadow: $box-shadow;
+  //border-radius: 3px;
+  //background-color: rgba(255, 255, 255, 0.3);
 }

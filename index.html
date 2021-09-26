@@ -36,6 +36,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
+    <!-- aos (fadein/out library)-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.css" />
   </head>
   <body>
@@ -136,18 +138,21 @@
       <div class="bg-video__overlay"></div>
     </div>
     -->
+
     <div class="bg"></div>
 
-    <div class="hero">
+    <div class="hero" data-aos="fade-up" data-aos-anchor-placement="top-center" >
       <div class="hero__left-content">
-        <h3 class="hero__top-slogan">Connecting people and technology</h3>
-        <h1 class="hero__center-slogan">Let’s open the world of IT to you</h1>
-        <p class="hero__bottom-slogan">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
-        <button class="button hero__button">Explore</button>
+        <div class="slogan-box">
+          <h3 class="slogan-box__top-slogan">Connecting people and technology</h3>
+          <h1 class="slogan-box__center-slogan">Let’s open the world of IT to you</h1>
+          <p class="slogan-box__bottom-slogan">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+          <button class="button hero__button">Explore</button>
+        </div>
       </div>
 
       <div class="hero__right-content"></div>
@@ -155,7 +160,7 @@
 
     <div class="gap"></div>
 
-    <div class="section">
+    <div class="section" data-aos="fade-up" data-aos-anchor-placement="top-center">
       <h2 class="section__title">Our Innovative Services</h2>
       <p class="section__desc">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -217,7 +222,7 @@
     <div class="gap"></div>
     <div class="gap"></div>
 
-    <div class="image-text">
+    <div class="image-text" data-aos="fade-up" data-aos-anchor-placement="top-center">
       <div class="image-text__left-content">
         <img src="./assets/sample-about-us.jpg" alt="About Us Image" />
       </div>
@@ -240,7 +245,7 @@
 
     <div class="gap"></div>
 
-    <div class="to-article-section">
+    <div class="to-article-section" data-aos="fade-up" data-aos-anchor-placement="top-center">
       <h2 class="to-article-section__title">Read Articles</h2>
       <p class="to-article-section__desc">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -267,7 +272,7 @@
           </a>
         </div>
         <div>
-          <div class="article">
+          <a href="/article.html" class="article">
             <img
               class="article__image"
               src="./assets/sample-business.jpg"
@@ -281,10 +286,10 @@
               Exercitation veniam consequat sunt nostrud amet.
             </p>
             <button class="button article__button">Read More</button>
-          </div>
+          </a>
         </div>
         <div>
-          <div class="article">
+          <a href="/article.html"  class="article">
             <img
               class="article__image"
               src="./assets/sample-business.jpg"
@@ -298,10 +303,10 @@
               Exercitation veniam consequat sunt nostrud amet.
             </p>
             <button class="button article__button">Read More</button>
-          </div>
+          </a>
         </div>
         <div>
-          <div class="article">
+          <a href="/article.html"  class="article">
             <img
               class="article__image"
               src="./assets/sample-business.jpg"
@@ -315,7 +320,7 @@
               Exercitation veniam consequat sunt nostrud amet.
             </p>
             <button class="button article__button">Read More</button>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -417,6 +422,10 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <!-- jQuery shadow animation extension must be after jQuery-->
+    <script src="//cdn.jsdelivr.net/jquery.shadow-animation/1/mainfile"></script>
+    <!-- aos (fadein/out library)-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- js slick: must be after jQuery -->
     <script
       type="text/javascript"
