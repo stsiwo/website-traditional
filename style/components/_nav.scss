@@ -14,7 +14,7 @@
   }
 
   @media screen and (max-width: $size-laptop - 1  + "px") {
-    //display: none;
+    display: none;
 
     // must match with js when toggle to right
     width: 200px;
