@@ -10,11 +10,11 @@
   opacity: 0;
 
   @media screen and (max-width: $size-tablet - 1  + "px") {
-    background: url("../assets/bg-small.svg") no-repeat center center fixed;
+    background: url("../assets/bg-small.jpg") no-repeat center center fixed;
   }
 
   @media screen and (min-width: $size-tablet + "px") and (max-width: $size-laptop - 1 + "px") {
-    background: url("../assets/bg-medium.svg") no-repeat center center fixed;
+    background: url("../assets/bg-medium.jpg") no-repeat center center fixed;
   }
 
   @media screen and (min-width: $size-laptop + "px") {
