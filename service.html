@@ -1,9 +1,18 @@
 <!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]><script src="js/libs/selectivizr.js"></script><![endif]-->
     <title>stsDev - Web & Mobile IT Company</title>
     <!-- normalizer -->
     <link
@@ -31,24 +40,34 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!-- font awesome icons-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
     <!-- aos (fadein/out library)-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.css" />
+
+    <!-- ie 6-8 support for CSS3: must be after your css -->
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script type="text/javascript" src="selectivizr.js"></script>
+      <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+    <![endif]-->
   </head>
   <body>
-
     <!-- header -->
     <header class="header">
-      <a class="logo-box header__logo-box" href="/">
+      <a class="logo-box header__logo-box"  href="./">
         <img src="./assets/logo.svg" alt="stsDev Logo Image" />
         <h2 class="logo-box__title">stsDev</h2>
       </a>
-      <div id="header-nav-icon" class="nav-icon header__nav-icon">
+      <div id="header-nav-icon" class="nav-icon icon-link header__nav-icon">
         <img src="./assets/menu.svg" alt="Header Nav Menu Icon" />
       </div>
       <nav id="header-nav" class="nav header__nav">
         <div id="header-close-icon" class="close-icon header__close-icon">
-          <img src="./assets/close.svg" alt="Header Nav Menu Close Icon" />
+          <img src="./assets/close.svg" class="icon-link" alt="Header Nav Menu Close Icon" />
         </div>
         <ul>
           <li class="nav__item">
@@ -61,7 +80,7 @@
                   </span>
                   <span class="nav__sub-title">Web Development</span></a
                 >
-              </li>
+              </li> 
               <li class="nav__sub-item">
                 <a href="./service.html" class="link nav__link">
                   <span class="material-icons nav__sub-icon">
@@ -79,10 +98,10 @@
                 >
               </li>
             </ul>
-          </li>
+          </li><hr class="nav__item-hr" />
           <li class="nav__item">
-            <a href="./about-us.html" class="link nav__link">About Us</a>
-          </li>
+            <a href="./about-us.html" class="link nav__link">About Us</a> 
+          </li><hr class="nav__item-hr" />
           <li id="careers-nav-item" class="nav__item">
             <a href="./careers.html" class="link nav__link">Careers</a>
             <ul id="careers-sub-nav-item" class="nav__sub-nav">
@@ -111,16 +130,16 @@
                   </a>
               </li>
             </ul>
-          </li>
+          </li><hr class="nav__item-hr" />
           <li class="nav__item">
             <a href="./contact-us.html" class="link nav__link">Contact Us</a>
-          </li>
+          </li><hr class="nav__item-hr" />
           <li class="nav__item">
             <a href="./articles.html" class="link nav__link">Articles</a>
-          </li>
+          </li><hr class="nav__item-hr" />
           <li class="nav__item">
             <a href="./signup.html" class="link nav__link">Sign Up</a>
-          </li>
+          </li><hr class="nav__item-hr" />
         </ul>
       </nav>
     </header>
@@ -133,9 +152,7 @@
       <h2 class="section__title">Web Development</h2>
       <hr style="width: 50%;" class="section__hr">
       <p class="section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
+        we provide modern web technologies to satisfy our clients.
       </p>
 
       <div class="small-gap"></div>
@@ -145,9 +162,7 @@
     <div class="service-type-section" data-aos="fade-up" >
       <div class="service-type-section__left-content">
         <p class="service-type-section__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
+          stsDev is one of the best Web development company. we guarantee that we can provide a high-quality web application efficiently and smoothly. Our main Web services includes: 
         </p>
         <div class="gen-list-box">
           <ul class="gen-list-box__list">
@@ -189,9 +204,7 @@
     <div class="tech-stack-section" data-aos="fade-up" >
       <h2 class="tech-stack-section__title">Tech Stack</h2>
       <p class="tech-stack-section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
+        We use technologies to build up Web application, and we constantly update our skills and knowledge to provide more better solutions to our clients.
       </p>
 
       <div class="small-gap"></div>
@@ -247,9 +260,7 @@
     <div class="section" data-aos="fade-up">
       <h2 class="section__title">Our Recent Projects</h2>
       <p class="section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
+        Let's explorer our Web application projects. 
       </p>
 
       <div class="small-gap"></div>
@@ -270,13 +281,11 @@
             </div>
             <div class="img-gradient card-v2__img-gradient"></div>
             <div class="card-v2__overlay">
-              <h3 class="card-v2__title">Project 1</h3>
+              <h3 class="card-v2__title">stsDev - E-commerce</h3>
               <hr style="width: 50%" class="card-v2__hr" />
               <div class="card-v2__desc-box card-v2__desc-box-hidden">
                 <p class="card-v2__desc">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
+                  an e-commerce web application with a fully admin management features. the admin can manage their own products, categories, orders, reviews, and customers. this is also integrated with Stripe payment gateway system. 
                 </p>
               </div>
               <!--
@@ -299,13 +308,11 @@
             </div>
             <div class="img-gradient card-v2__img-gradient"></div>
             <div class="card-v2__overlay">
-              <h3 class="card-v2__title">Project 1</h3>
+              <h3 class="card-v2__title">stsDev - E-commerce</h3>
               <hr style="width: 50%" class="card-v2__hr" />
               <div class="card-v2__desc-box card-v2__desc-box-hidden">
                 <p class="card-v2__desc">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
+                  an e-commerce web application with a fully admin management features. the admin can manage their own products, categories, orders, reviews, and customers. this is also integrated with Stripe payment gateway system. 
                 </p>
               </div>
               <!--
@@ -328,13 +335,11 @@
             </div>
             <div class="img-gradient card-v2__img-gradient"></div>
             <div class="card-v2__overlay">
-              <h3 class="card-v2__title">Project 1</h3>
+              <h3 class="card-v2__title">stsDev - E-commerce</h3>
               <hr style="width: 50%" class="card-v2__hr" />
               <div class="card-v2__desc-box card-v2__desc-box-hidden">
                 <p class="card-v2__desc">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
+                  an e-commerce web application with a fully admin management features. the admin can manage their own products, categories, orders, reviews, and customers. this is also integrated with Stripe payment gateway system. 
                 </p>
               </div>
               <!--
@@ -357,13 +362,11 @@
             </div>
             <div class="img-gradient card-v2__img-gradient"></div>
             <div class="card-v2__overlay">
-              <h3 class="card-v2__title">Project 1</h3>
+              <h3 class="card-v2__title">stsDev - E-commerce</h3>
               <hr style="width: 50%" class="card-v2__hr" />
               <div class="card-v2__desc-box card-v2__desc-box-hidden">
                 <p class="card-v2__desc">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet.
+                  an e-commerce web application with a fully admin management features. the admin can manage their own products, categories, orders, reviews, and customers. this is also integrated with Stripe payment gateway system. 
                 </p>
               </div>
               <!--
@@ -389,9 +392,10 @@
       <div class="small-gap"></div>
     </div>
 
-    <div class="to-contact-section" data-aos="fade-up">
+    <div class="to-contact-section" data-aos="fade-up" >
       <div class="to-contact-section__left-content">
         <div class="img-container-1-166">
+          <div class="img-container-1-166__img img-container-1-166__overlay"></div>
           <img
             class="img-container-1-166__img"
             src="./assets/sample-contact-us-vertical-image.jpg"
@@ -404,24 +408,20 @@
           Our goal is to provide efficiency and quality on time projects
         </h3>
         <p class="to-contact-section__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
+          Let's start with what you have in your mind to start your business. The first step we need to take is a free quote.
         </p>
-        <button class="button to-contact-section__button">
-          Contact Us Now
-        </button>
+        <a href="./contact-us.html" class="button to-contact-section__button">
+          Contact Us
+        </a>
       </div>
     </div>
 
     <div class="gap"></div>
 
     <div class="to-article-section" data-aos="fade-up" data-aos-anchor-placement="top-center">
-      <h2 class="to-article-section__title">Read Articles</h2>
+      <h2 class="to-article-section__title">Recent Blogs</h2>
       <p class="to-article-section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
+        We regularly push our blog articles here to announce exciting and meaningful news for everyone.
       </p>
 
       <div class="to-article-secstion__slick">
@@ -432,12 +432,10 @@
               src="./assets/sample-business.jpg"
               alt="Article Thumbnail Image"
             />
-            <h3 class="article__title">Title Here</h3>
+            <h3 class="article__title">React.js With Single Page Application</h3>
             <p class="article__date">September, 19th 2021</p>
             <p class="article__desc">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              We are happy to announce that we finally released a template with React.js based on a single-page application. We provide a more smooth UI for our clients with the application.
             </p>
             <button class="button article__button">Read More</button>
           </a>
@@ -449,46 +447,40 @@
               src="./assets/sample-business.jpg"
               alt="Article Thumbnail Image"
             />
-            <h3 class="article__title">Title Here</h3>
+            <h3 class="article__title">React.js With Single Page Application</h3>
             <p class="article__date">September, 19th 2021</p>
             <p class="article__desc">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              We are happy to announce that we finally released a template with React.js based on a single-page application. We provide a more smooth UI for our clients with the application.
             </p>
             <button class="button article__button">Read More</button>
           </a>
         </div>
         <div>
-          <a href="./article.html"  class="article">
+          <a href="./article.html" class="article">
             <img
               class="article__image"
               src="./assets/sample-business.jpg"
               alt="Article Thumbnail Image"
             />
-            <h3 class="article__title">Title Here</h3>
+            <h3 class="article__title">React.js With Single Page Application</h3>
             <p class="article__date">September, 19th 2021</p>
             <p class="article__desc">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              We are happy to announce that we finally released a template with React.js based on a single-page application. We provide a more smooth UI for our clients with the application.
             </p>
             <button class="button article__button">Read More</button>
           </a>
         </div>
         <div>
-          <a href="./article.html"  class="article">
+          <a href="./article.html" class="article">
             <img
               class="article__image"
               src="./assets/sample-business.jpg"
               alt="Article Thumbnail Image"
             />
-            <h3 class="article__title">Title Here</h3>
+            <h3 class="article__title">React.js With Single Page Application</h3>
             <p class="article__date">September, 19th 2021</p>
             <p class="article__desc">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              We are happy to announce that we finally released a template with React.js based on a single-page application. We provide a more smooth UI for our clients with the application.
             </p>
             <button class="button article__button">Read More</button>
           </a>
@@ -504,9 +496,7 @@
             <h2 class="logo-box__title footer__logo-title">stsDev</h2>
           </div>
           <p class="company__desc">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
+            We've been since 2010 to provide the best IT services to small & medium companies. Our main mission to provide creative and innovative IT solutions to our clients. 
           </p>
           <div class="company__contact">
             <p class="contact__address-1">3117 Weston Rd</p>
@@ -532,32 +522,32 @@
           <h3 class="links__title">Links</h3>
           <ul class="links__link-box">
             <li>
-              <a class="footer__link links__link" href="/services.html"
+              <a class="footer__link links__link" href="./services.html"
                 >Services</a
               >
             </li>
             <li>
-              <a class="footer__link links__link" href="/about-us.html"
+              <a class="footer__link links__link" href="./about-us.html"
                 >About Us</a
               >
             </li>
             <li>
-              <a class="footer__link links__link" href="/careers.html"
+              <a class="footer__link links__link" href="./careers.html"
                 >Careers</a
               >
             </li>
             <li>
-              <a class="footer__link links__link" href="/contact-us.html"
+              <a class="footer__link links__link" href="./contact-us.html"
                 >Contact Us</a
               >
             </li>
             <li>
-              <a class="footer__link links__link" href="/articles.html"
+              <a class="footer__link links__link" href="./articles.html"
                 >Articles</a
               >
             </li>
             <li>
-              <a class="footer__link links__link" href="/signup.html"
+              <a class="footer__link links__link" href="./signup.html"
                 >Sign Up</a
               >
             </li>
@@ -566,9 +556,7 @@
         <div class="subscription footer__subscription">
           <h3 class="subscription__title">Newsletters & Articles</h3>
           <p class="subscription__desc">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
+            We regularly push our blog articles here to announce exciting and meaningful news for everyone. Please subscribe our weekly newsletters so you won't miss any of exciting news.
           </p>
           <button class="button button__subscription">Subscribe Now</button>
         </div>
@@ -586,21 +574,27 @@
         </div>
       </div>
     </div>
+
     <!-- scripts -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <!-- jquery ui for mainly toggle left/right-->
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"></script>
     <!-- jQuery shadow animation extension must be after jQuery-->
     <script src="//cdn.jsdelivr.net/jquery.shadow-animation/1/mainfile"></script>
+    <!-- aos (fadein/out library)-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- js slick: must be after jQuery -->
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <!-- aos (fadein/out library)-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

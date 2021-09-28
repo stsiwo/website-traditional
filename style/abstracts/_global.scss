@@ -69,6 +69,7 @@ a {
 .icon-link {
   display: inline-block;
   color: #fff;
+  cursor: pointer;
   @include color-change-hover($color-accent);
 }
 

@@ -1,9 +1,18 @@
 <!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]><script src="js/libs/selectivizr.js"></script><![endif]-->
     <title>stsDev - Web & Mobile IT Company</title>
     <!-- normalizer -->
     <link
@@ -31,23 +40,34 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!-- font awesome icons-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
     <!-- aos (fadein/out library)-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.css" />
+
+    <!-- ie 6-8 support for CSS3: must be after your css -->
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script type="text/javascript" src="selectivizr.js"></script>
+      <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+    <![endif]-->
   </head>
   <body>
     <!-- header -->
     <header class="header">
-      <a class="logo-box header__logo-box" href="/">
+      <a class="logo-box header__logo-box"  href="./">
         <img src="./assets/logo.svg" alt="stsDev Logo Image" />
         <h2 class="logo-box__title">stsDev</h2>
       </a>
-      <div id="header-nav-icon" class="nav-icon header__nav-icon">
+      <div id="header-nav-icon" class="nav-icon icon-link header__nav-icon">
         <img src="./assets/menu.svg" alt="Header Nav Menu Icon" />
       </div>
       <nav id="header-nav" class="nav header__nav">
         <div id="header-close-icon" class="close-icon header__close-icon">
-          <img src="./assets/close.svg" alt="Header Nav Menu Close Icon" />
+          <img src="./assets/close.svg" class="icon-link" alt="Header Nav Menu Close Icon" />
         </div>
         <ul>
           <li class="nav__item">
@@ -60,7 +80,7 @@
                   </span>
                   <span class="nav__sub-title">Web Development</span></a
                 >
-              </li>
+              </li> 
               <li class="nav__sub-item">
                 <a href="./service.html" class="link nav__link">
                   <span class="material-icons nav__sub-icon">
@@ -78,10 +98,10 @@
                 >
               </li>
             </ul>
-          </li>
+          </li><hr class="nav__item-hr" />
           <li class="nav__item">
-            <a href="./about-us.html" class="link nav__link">About Us</a>
-          </li>
+            <a href="./about-us.html" class="link nav__link">About Us</a> 
+          </li><hr class="nav__item-hr" />
           <li id="careers-nav-item" class="nav__item">
             <a href="./careers.html" class="link nav__link">Careers</a>
             <ul id="careers-sub-nav-item" class="nav__sub-nav">
@@ -110,16 +130,16 @@
                   </a>
               </li>
             </ul>
-          </li>
+          </li><hr class="nav__item-hr" />
           <li class="nav__item">
             <a href="./contact-us.html" class="link nav__link">Contact Us</a>
-          </li>
+          </li><hr class="nav__item-hr" />
           <li class="nav__item">
             <a href="./articles.html" class="link nav__link">Articles</a>
-          </li>
+          </li><hr class="nav__item-hr" />
           <li class="nav__item">
             <a href="./signup.html" class="link nav__link">Sign Up</a>
-          </li>
+          </li><hr class="nav__item-hr" />
         </ul>
       </nav>
     </header>
@@ -131,36 +151,15 @@
     <div class="section" data-aos="fade-up">
       <h2 class="section__title">Intermediate Web Designer</h2>
       <hr style="width: 50%;" class="section__hr">
-      <p class="section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
 
       <div class="small-gap"></div>
     </div>
-
-    <div class="gap"></div>
 
     <!-- description -->
     <div class="section" data-aos="fade-up">
       <h2 class="section__title">Description</h2>
       <p class="section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
+        We are seeking a talented web designer who is passionate about all things digital! You should be experienced with front-end development (HTML5, CSS3) and WordPress. We're looking for someone who has experience creating beautiful designs that are also fully responsive across all devices. You will be creating amazing sites using the theme builder; you should have a deep understanding of how it works and best practices for customizing pages with its interface and Global theme builder functionality.
       </p>
     </div>
 
@@ -173,28 +172,23 @@
           <ul class="gen-list-box__list">
             <li class="gen-list-box__item">
               <span class="material-icons gen-list-box__icon"> check_circle </span>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint.
+              Have a passion and love for web design!
             </li>
             <li class="gen-list-box__item">
               <span class="material-icons gen-list-box__icon"> check_circle </span>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint.
+              Extensive experience with WordPress & Divi theme builder is a must.
             </li>
             <li class="gen-list-box__item">
               <span class="material-icons gen-list-box__icon"> check_circle </span>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint.
+              Understanding of web design fundamentals, trends, and mobile/tablet responsiveness.
             </li>
             <li class="gen-list-box__item">
               <span class="material-icons gen-list-box__icon"> check_circle </span>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint.
+              Proven track record of managing simultaneous projects, staying on budget and meeting deadlines.
             </li>
             <li class="gen-list-box__item">
               <span class="material-icons gen-list-box__icon"> check_circle </span>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint.
+              Able to collaborate effectively with clients and other team members.
             </li>
           </ul>
         </div>
@@ -205,28 +199,23 @@
           <ul class="gen-list-box__list">
             <li class="gen-list-box__item">
               <span class="material-icons gen-list-box__icon"> check_circle </span>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint.
+              Able to create beautiful design concepts for clients that can be practically built with the Divi builder. (Adobe XD, Photoshop, etc...).
             </li>
             <li class="gen-list-box__item">
               <span class="material-icons gen-list-box__icon"> check_circle </span>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint.
+              Able to take projects from concept all the way through completion working closely with clients.
             </li>
             <li class="gen-list-box__item">
               <span class="material-icons gen-list-box__icon"> check_circle </span>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint.
+              Able to set up Hosting & DNS for new or migrating websites.
             </li>
             <li class="gen-list-box__item">
               <span class="material-icons gen-list-box__icon"> check_circle </span>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint.
+              Able to download and set up WordPress according to best practices.
             </li>
             <li class="gen-list-box__item">
               <span class="material-icons gen-list-box__icon"> check_circle </span>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-              sint.
+              Able to troubleshoot and resolve basic database/hosting issues.
             </li>
           </ul>
         </div>
@@ -237,9 +226,7 @@
 
     <div class="career-carousel-section" data-aos="fade-up">
       <p class="carousel-section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
+        We are an equal opportunity employer that recognizes the value of a diverse workforce. All qualified candidates will receive consideration for employment based on objective criteria and without regard to the following non-exhaustive reasons: race, colour, age, religion, gender, national origin, disability, sexual orientation, gender identity, protected veteran status, or other characteristics in accordance with the relevant governing laws. 
       </p>
       <div class="carousel-section__content">
         <div class="carousel-section__slick">
@@ -280,11 +267,6 @@
     <!-- benefits -->
     <div class="section" data-aos="fade-up">
       <h2 class="section__title">Benefits</h2>
-      <p class="section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
 
       <div class="small-gap"></div>
 
@@ -349,9 +331,10 @@
       <div class="small-gap"></div>
     </div>
 
-    <div class="to-contact-section">
+    <div class="to-contact-section" data-aos="fade-up" >
       <div class="to-contact-section__left-content">
         <div class="img-container-1-166">
+          <div class="img-container-1-166__img img-container-1-166__overlay"></div>
           <img
             class="img-container-1-166__img"
             src="./assets/sample-contact-us-vertical-image.jpg"
@@ -364,24 +347,20 @@
           Our goal is to provide efficiency and quality on time projects
         </h3>
         <p class="to-contact-section__desc">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
+          Let's start with what you have in your mind to start your business. The first step we need to take is a free quote.
         </p>
-        <button class="button to-contact-section__button">
-          Contact Us Now
-        </button>
+        <a href="./contact-us.html" class="button to-contact-section__button">
+          Contact Us
+        </a>
       </div>
     </div>
 
     <div class="gap"></div>
 
     <div class="to-article-section" data-aos="fade-up" data-aos-anchor-placement="top-center">
-      <h2 class="to-article-section__title">Read Articles</h2>
+      <h2 class="to-article-section__title">Recent Blogs</h2>
       <p class="to-article-section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
+        We regularly push our blog articles here to announce exciting and meaningful news for everyone.
       </p>
 
       <div class="to-article-secstion__slick">
@@ -392,12 +371,10 @@
               src="./assets/sample-business.jpg"
               alt="Article Thumbnail Image"
             />
-            <h3 class="article__title">Title Here</h3>
+            <h3 class="article__title">React.js With Single Page Application</h3>
             <p class="article__date">September, 19th 2021</p>
             <p class="article__desc">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              We are happy to announce that we finally released a template with React.js based on a single-page application. We provide a more smooth UI for our clients with the application.
             </p>
             <button class="button article__button">Read More</button>
           </a>
@@ -409,53 +386,46 @@
               src="./assets/sample-business.jpg"
               alt="Article Thumbnail Image"
             />
-            <h3 class="article__title">Title Here</h3>
+            <h3 class="article__title">React.js With Single Page Application</h3>
             <p class="article__date">September, 19th 2021</p>
             <p class="article__desc">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              We are happy to announce that we finally released a template with React.js based on a single-page application. We provide a more smooth UI for our clients with the application.
             </p>
             <button class="button article__button">Read More</button>
           </a>
         </div>
         <div>
-          <a href="./article.html"  class="article">
+          <a href="./article.html" class="article">
             <img
               class="article__image"
               src="./assets/sample-business.jpg"
               alt="Article Thumbnail Image"
             />
-            <h3 class="article__title">Title Here</h3>
+            <h3 class="article__title">React.js With Single Page Application</h3>
             <p class="article__date">September, 19th 2021</p>
             <p class="article__desc">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              We are happy to announce that we finally released a template with React.js based on a single-page application. We provide a more smooth UI for our clients with the application.
             </p>
             <button class="button article__button">Read More</button>
           </a>
         </div>
         <div>
-          <a href="./article.html"  class="article">
+          <a href="./article.html" class="article">
             <img
               class="article__image"
               src="./assets/sample-business.jpg"
               alt="Article Thumbnail Image"
             />
-            <h3 class="article__title">Title Here</h3>
+            <h3 class="article__title">React.js With Single Page Application</h3>
             <p class="article__date">September, 19th 2021</p>
             <p class="article__desc">
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
+              We are happy to announce that we finally released a template with React.js based on a single-page application. We provide a more smooth UI for our clients with the application.
             </p>
             <button class="button article__button">Read More</button>
           </a>
         </div>
       </div>
     </div>
-
     <div class="footer">
       <div class="footer__top">
         <div class="company footer__company">

@@ -1,9 +1,18 @@
 <!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]><script src="js/libs/selectivizr.js"></script><![endif]-->
     <title>stsDev - Web & Mobile IT Company</title>
     <!-- normalizer -->
     <link
@@ -31,23 +40,34 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!-- font awesome icons-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
     <!-- aos (fadein/out library)-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.css" />
+
+    <!-- ie 6-8 support for CSS3: must be after your css -->
+    <!--[if (gte IE 6)&(lte IE 8)]>
+      <script type="text/javascript" src="selectivizr.js"></script>
+      <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
+    <![endif]-->
   </head>
   <body>
     <!-- header -->
     <header class="header">
-      <a class="logo-box header__logo-box" href="/">
+      <a class="logo-box header__logo-box"  href="./">
         <img src="./assets/logo.svg" alt="stsDev Logo Image" />
         <h2 class="logo-box__title">stsDev</h2>
       </a>
-      <div id="header-nav-icon" class="nav-icon header__nav-icon">
+      <div id="header-nav-icon" class="nav-icon icon-link header__nav-icon">
         <img src="./assets/menu.svg" alt="Header Nav Menu Icon" />
       </div>
       <nav id="header-nav" class="nav header__nav">
         <div id="header-close-icon" class="close-icon header__close-icon">
-          <img src="./assets/close.svg" alt="Header Nav Menu Close Icon" />
+          <img src="./assets/close.svg" class="icon-link" alt="Header Nav Menu Close Icon" />
         </div>
         <ul>
           <li class="nav__item">
@@ -60,7 +80,7 @@
                   </span>
                   <span class="nav__sub-title">Web Development</span></a
                 >
-              </li>
+              </li> 
               <li class="nav__sub-item">
                 <a href="./service.html" class="link nav__link">
                   <span class="material-icons nav__sub-icon">
@@ -78,10 +98,10 @@
                 >
               </li>
             </ul>
-          </li>
+          </li><hr class="nav__item-hr" />
           <li class="nav__item">
-            <a href="./about-us.html" class="link nav__link">About Us</a>
-          </li>
+            <a href="./about-us.html" class="link nav__link">About Us</a> 
+          </li><hr class="nav__item-hr" />
           <li id="careers-nav-item" class="nav__item">
             <a href="./careers.html" class="link nav__link">Careers</a>
             <ul id="careers-sub-nav-item" class="nav__sub-nav">
@@ -110,16 +130,16 @@
                   </a>
               </li>
             </ul>
-          </li>
+          </li><hr class="nav__item-hr" />
           <li class="nav__item">
             <a href="./contact-us.html" class="link nav__link">Contact Us</a>
-          </li>
+          </li><hr class="nav__item-hr" />
           <li class="nav__item">
             <a href="./articles.html" class="link nav__link">Articles</a>
-          </li>
+          </li><hr class="nav__item-hr" />
           <li class="nav__item">
             <a href="./signup.html" class="link nav__link">Sign Up</a>
-          </li>
+          </li><hr class="nav__item-hr" />
         </ul>
       </nav>
     </header>
@@ -130,10 +150,8 @@
       <h3 class="signup-section__title">Welcome Back</h3>
       <hr style="width: 50%" class="signup-section__hr">
       <p class="signup-section__desc">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
       </p>
+      <div class="small-gap"></div>
       <form class="form signup-section__form" action="" method="post">
         <div class="form__text-input">
           <label for="email">Email</label><br />

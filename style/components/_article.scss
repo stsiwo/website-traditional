@@ -6,6 +6,7 @@
   box-shadow: $box-shadow;
   min-width: 300px;
   display: inline-block; // to disable margin collapse of 1st and last child
+  width: 100%;
 
   &__image {
     max-width: 100%;

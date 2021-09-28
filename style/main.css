@@ -67,6 +67,7 @@ a {
 .icon-link {
   display: inline-block;
   color: #fff;
+  cursor: pointer;
   -webkit-transition: color ease 0.5s;
   transition: color ease 0.5s;
 }
@@ -116,10 +117,10 @@ a {
 
 @media screen and (max-width: 768px) {
   .nav {
-    width: 150px;
+    width: 200px;
     position: fixed;
     top: 0;
-    left: 100%;
+    right: 0;
     bottom: 0;
     background-color: #0099ff;
   }
@@ -139,8 +140,14 @@ a {
             flex-direction: column;
   }
   .nav__item {
-    margin: 16px 24px;
-    border-bottom: 1px solid #fff;
+    margin: 8px 0px;
+  }
+  .nav__item-hr {
+    width: 80%;
+    background-color: #ff6500;
+    height: 1px;
+    border: none;
+    color: #ff6500;
   }
   .nav__link {
     color: #fff;
@@ -168,6 +175,14 @@ a {
   }
   .nav__item {
     margin: 0 8px;
+  }
+  .nav__item-hr {
+    width: 80%;
+    background-color: #ff6500;
+    height: 1px;
+    border: none;
+    color: #ff6500;
+    display: none;
   }
   .nav__sub-nav {
     -webkit-box-shadow: grey 1px 1px 2px;
@@ -297,6 +312,7 @@ a {
 
 .card__desc {
   color: rgba(0, 0, 0, 0.6);
+  padding: 0 8px;
 }
 
 .card__icon {
@@ -309,6 +325,7 @@ a {
           box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   min-width: 300px;
   display: inline-block;
+  width: 100%;
 }
 
 .article__image {
@@ -990,6 +1007,10 @@ a {
   margin: 8px;
 }
 
+.header__close-icon > img {
+  width: 32px;
+}
+
 @media screen and (min-width: 769px) {
   .header__close-icon {
     display: none;
@@ -1097,7 +1118,7 @@ a {
 
 @media screen and (min-width: 769px) {
   .bg {
-    background: url("../assets/bg-prototype1.jpg") no-repeat center center fixed;
+    background: url("../assets/bg-prototype1-v3.jpg") no-repeat center center fixed;
   }
 }
 
@@ -1167,6 +1188,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-weight: bold;
   height: 100vh;
 }
 
@@ -1177,9 +1199,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: inherit;
+      -ms-flex-align: inherit;
+          align-items: inherit;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }

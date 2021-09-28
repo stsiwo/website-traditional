@@ -24,6 +24,10 @@
   &__close-icon {
     text-align: right;
     margin: 8px;
+
+    & > img {
+      width: 32px;
+    }
   }
 
   @media screen and (min-width: $size-laptop + "px") {

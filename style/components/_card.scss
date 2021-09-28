@@ -19,6 +19,7 @@
 
   &__desc {
     @include helper-text;
+    padding: 0 8px;
   }
 
   &__icon {

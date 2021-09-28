@@ -162,12 +162,26 @@ $(document).ready(function () {
   /**
    * function lists
    */
-  function handlHeaderNavClose(event) {
-    $("#header-nav").animate({
-      left: "100%",
-      boxShadow: "none",
-    });
-  }
+  //function handlHeaderNavClose(event) {
+  //  $("#header-nav").animate({
+  //    left: "100%",
+  //    boxShadow: "none",
+  //  });
+  //}
+
+  /**
+   * side nav bar feature on mobile
+   */
+  $("#header-nav-icon").on("click", function (event) {
+    console.log("you clicked.");
+    $("#header-nav").toggle("slide", { direction: "right" });
+    event.stopPropagation();
+  });
+
+  $("#header-close-icon").on("click", function (event) {
+    $("#header-nav").toggle("slide", { direction: "right" });
+    event.stopPropagation();
+  });
 
   /**
    * close header nav when user resize / change orientation.
@@ -175,38 +189,38 @@ $(document).ready(function () {
    * - be careful esp when resize this is run every time resize so this causes wierd behavior. but usual users never resize the screen so leave it as it is.
    * - if you need to fix this you need to do this: debounce so only run once in a while https://stackoverflow.com/questions/4298612/jquery-how-to-call-resize-event-only-once-its-finished-resizing
    */
-  $(window).on("resize orientationchange", handlHeaderNavClose);
+  //$(window).on("resize orientationchange", handlHeaderNavClose);
 
   /**
    * outside click handler close header nav on mobile
    */
-  $("html").on("click", handlHeaderNavClose);
-  $("#header-nav").on("click", function (event) {
-    event.stopPropagation();
-  });
+  //$("html").on("click", handlHeaderNavClose);
+  //$("#header-nav").on("click", function (event) {
+  //  event.stopPropagation();
+  //});
 
-  /**
-   * toggle nav bar on mobile/tablet
-   */
-  $("#header-nav-icon").on("click", function (event) {
-    //$("#header-nav").slideToggle();
-    //$("#header-nav").addClass("nav_active");
+  ///**
+  // * toggle nav bar on mobile/tablet
+  // */
+  //$("#header-nav-icon").on("click", function (event) {
+  //  //$("#header-nav").slideToggle();
+  //  //$("#header-nav").addClass("nav_active");
 
-    // must match with css
-    const toggleWidth = 150;
+  //  // must match with css
+  //  const toggleWidth = 150;
 
-    $("#header-nav").animate({
-      left: `-=${toggleWidth}px`,
-      boxShadow: "-1px 0px 5px rgba(0, 0, 0, 0.25)",
-    });
+  //  $("#header-nav").animate({
+  //    left: `-=${toggleWidth}px`,
+  //    boxShadow: "-1px 0px 5px rgba(0, 0, 0, 0.25)",
+  //  });
 
-    event.stopPropagation();
-  });
+  //  event.stopPropagation();
+  //});
 
   /**
    * close nav bar on mobile/tablet
    */
-  $("#header-close-icon").on("click", handlHeaderNavClose);
+  //$("#header-close-icon").on("click", handlHeaderNavClose);
 
   /**
    * toggle sub nav on mobile/tablet
