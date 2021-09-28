@@ -21,6 +21,12 @@
     background: url("../assets/bg-prototype1-v3.jpg") no-repeat center center
       fixed;
   }
+
+  &_normal {
+    @media screen and (min-width: $size-laptop + "px") {
+      background: url("../assets/bg-large.png") no-repeat center center fixed;
+    }
+  }
 }
 
 .bg-other-pages {

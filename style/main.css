@@ -1122,6 +1122,12 @@ a {
   }
 }
 
+@media screen and (min-width: 769px) {
+  .bg_normal {
+    background: url("../assets/bg-large.png") no-repeat center center fixed;
+  }
+}
+
 .bg-other-pages {
   position: absolute;
   top: 0;
