@@ -160,6 +160,14 @@ better to use media query since it is cimplicated.
 
 ref: https://stackoverflow.com/questions/55281598/css-grid-maximum-number-of-columns-without-media-queries
 
+### issue:iphone-mobile-cannot-use-fixed-background-attachment
+
+some mobiles esp iphone cannot display the background image with url. this is because of 'background-attachment: fixed'. this is too expensive for mobile devices so disabled.
+
+solution) use 'scroll' instead.
+
+ref: https://stackoverflow.com/questions/20443574/fixed-background-image-with-ios7
+
 ## Slick library
 
 ### usage

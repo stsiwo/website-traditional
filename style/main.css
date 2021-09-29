@@ -1109,26 +1109,25 @@ a {
 
 @media screen and (max-width: 425px) {
   .bg {
-    background: url(../assets/bg-small.jpg) no-repeat center center fixed;
-    background-size: cover;
+    background: url(../assets/bg-small.jpg) no-repeat center center scroll;
   }
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .bg {
-    background: url(../assets/bg-medium.jpg) no-repeat center center fixed;
+    background: url(../assets/bg-medium.jpg) no-repeat center center scroll;
   }
 }
 
 @media screen and (min-width: 769px) {
   .bg {
-    background: url(../assets/bg-prototype1-v3.jpg) no-repeat center center fixed;
+    background: url(../assets/bg-prototype1-v3.jpg) no-repeat center center scroll;
   }
 }
 
 @media screen and (min-width: 769px) {
   .bg_normal {
-    background: url(../assets/bg-large.png) no-repeat center center fixed;
+    background: url(../assets/bg-large.png) no-repeat center center scroll;
   }
 }
 

@@ -12,25 +12,23 @@
   opacity: 0;
 
   @media screen and (max-width: $size-tablet - 1  + "px") {
-    background: url(../assets/bg-small.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    // issue:iphone-mobile-cannot-use-fixed-background-attachment
+    background: url(../assets/bg-small.jpg) no-repeat center center scroll;
   }
 
   @media screen and (min-width: $size-tablet + "px") and (max-width: $size-laptop - 1 + "px") {
-    background: url(../assets/bg-medium.jpg) no-repeat center center fixed;
+    // issue:iphone-mobile-cannot-use-fixed-background-attachment
+    background: url(../assets/bg-medium.jpg) no-repeat center center scroll;
   }
 
   @media screen and (min-width: $size-laptop + "px") {
     background: url(../assets/bg-prototype1-v3.jpg) no-repeat center center
-      fixed;
+      scroll;
   }
 
   &_normal {
     @media screen and (min-width: $size-laptop + "px") {
-      background: url(../assets/bg-large.png) no-repeat center center fixed;
+      background: url(../assets/bg-large.png) no-repeat center center scroll;
     }
   }
 }
