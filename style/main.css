@@ -1108,6 +1108,7 @@ a {
 @media screen and (max-width: 425px) {
   .bg {
     background: url("../assets/bg-small.jpg") no-repeat center center fixed;
+    background-size: cover;
   }
 }
 

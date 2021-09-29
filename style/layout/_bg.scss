@@ -11,6 +11,10 @@
 
   @media screen and (max-width: $size-tablet - 1  + "px") {
     background: url("../assets/bg-small.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   @media screen and (min-width: $size-tablet + "px") and (max-width: $size-laptop - 1 + "px") {
